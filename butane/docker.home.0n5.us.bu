@@ -4,6 +4,7 @@ ignition:
   config:
     merge: 
       - local: ./ignition/common/fixer_user.ign
+      - local: ./ignition/common/docker_mount.ign
 storage:
   files:
     - path: /etc/hostname

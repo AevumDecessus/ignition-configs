@@ -1,0 +1,14 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: opt-docker.mount
+      enabled: true
+      contents: | 
+        [Unit]
+        Before=remote-fs.target
+        [Mount]
+        What=truenas.home.0n5.us:/mnt/fastdata/docker
+        Where=/opt/docker
+        [Install]
+        WantedBy=remote-fs.target

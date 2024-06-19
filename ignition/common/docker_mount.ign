@@ -1,0 +1,14 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "systemd": {
+    "units": [
+      {
+        "contents": "[Unit]\nBefore=remote-fs.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/fastdata/docker\nWhere=/opt/docker\n[Install]\nWantedBy=remote-fs.target\n",
+        "enabled": true,
+        "name": "opt-docker.mount"
+      }
+    ]
+  }
+}
