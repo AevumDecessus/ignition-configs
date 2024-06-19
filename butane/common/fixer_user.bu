@@ -7,7 +7,9 @@ passwd:
          - AAAAC3NzaC1lZDI1NTE5AAAAIKguioxb528BXrSrJ/3v4eSBX2zi1ukPzadIuIvKQhZ5
          - AAAAC3NzaC1lZDI1NTE5AAAAIImlLeTqPZDaVe9RMc+LSKUnaTaOlTxvvdefx6CJg9E4
        home_dir: /home/fixer
+       uid: 7654
        groups: 
+         - fixer
          - wheel
          - docker
        shell: /bin/bash
