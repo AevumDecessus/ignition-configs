@@ -1,17 +1,9 @@
 variant: fcos
 version: 1.5.0
-passwd:
-   users:
-     - name: fixer
-       ssh_authorized_keys:
-         - AAAAC3NzaC1lZDI1NTE5AAAAIKguioxb528BXrSrJ/3v4eSBX2zi1ukPzadIuIvKQhZ5
-         - AAAAC3NzaC1lZDI1NTE5AAAAIImlLeTqPZDaVe9RMc+LSKUnaTaOlTxvvdefx6CJg9E4
-       home_dir: /home/fixer
-       groups: 
-         - wheel
-         - docker
-       shell: /bin/bash
-       password_hash: $6$9g9XjICLGkbiIFcR$lI8UBhWs7wxhEohYj1BbxrEy.X6yoXuJWADbsfWOo.0X2NljahUHjyBv9MkagHsx9hXjWBUej7hYu0E2P/9zB0
+ignition:
+  config:
+    merge: 
+      - local: ./ignition/common/fixer_user.ign
 storage:
   files:
     - path: /etc/hostname
