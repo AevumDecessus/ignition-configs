@@ -6,7 +6,7 @@
     "groups": [
       {
         "gid": 2001,
-        "name": "media"
+        "name": "data"
       },
       {
         "gid": 2002,
