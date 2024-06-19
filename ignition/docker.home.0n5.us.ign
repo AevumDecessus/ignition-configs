@@ -1,24 +1,22 @@
 {
   "ignition": {
+    "config": {
+      "merge": [
+        {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/4ySzWqAMBCE73mKJWeR1N/WVymlpHErSzWRpFpL8d1LVLCHpeQUdjLfbAbyIwAkDZY+yVnZQZwB5Io+nIIs8ypXUgDsWfTOOoSv/nYO3i1zkB08HzNc+nlH0Vgo9ZDdotUTxtwJe9Ly0vfsH7pgaKMn9Gl4yeDziFsSXLG7R3rzmMTXXHMKJgluGBhX9N/Opm1vmYCAZkl5fNvUXPl32tAn0I9PiqF7Zz7Qvy7hT8ZxvsQPJnbxGwAA//+HK59CkAIAAA=="
+        },
+        {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/3SSX2/aMBDA3/kUlsXbKsJ/mr4lkI0ApazASJn64JAjdjBxZ9chZOK7T86qNR3bk32/3+l0urufNYQwi1P2ykSK75CJEcIZSPUb4E6j22jiGkKXG5P7QpQ6Re+ZWoFU+A59L0P0hksVS6Ffqq6ke5aDxDdVdKIA/COKxO4AEv9Bz+8WU3GEEZOmOcv8rb9L4pQcwegrUXYvZDQmipqEer9ux3aQ+MPZl0PI/M+7xzr3b9cu3ajBKaeeoE9Jyw1z6Z0bQf8sAj3ZOKNQ7TcPotEM2nOeELoeJ2c3s+8PJB6r3KZBsnHXkAzok2567YVlF26z2oVS1NGvVEhWQDSF89WMHMdxhp15QYYtvh35rfnK6xnmT2PNRB722rduIJdyYnWyLizdoF2wlj4sChL52s+mX+m293Ge/63oH/kMVj8W2xH5Bvbj/e7TbDldp2RFHvgqz7II9nl/OIltr/vvbSgKnJe7CFlqhWawFauZuZVBv9d9Y5fyfTb3VLvUfgUAAP//ErhyQn8CAAA="
+        },
+        {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/2yQMWvDQAyFd/+KQ3NyDrRdDF6ydehYOjgZ1FhOjvqkcJILofi/Fzmh6ZDp0Hsfeu/0U4UA6cjJkjA0wecQ4JuKXgV4is9xA1UI88pZvahR7u/oxMkUmtAtY7jJi3UQNuLFhe6dk+13vKVBCrWFshitB42G5Ui24+5NJnbi44TWWpmIUeNJMsUNv8RJmzqz1QOq9WhY93L4ouI4FWprOduf1L2yGo6jL0M26reXB4Gwujclxs+R/Fce/M9gzOT15Wzr6/qYvSfckHl5936eaq5+AwAA//+U8u33TgEAAA=="
+        }
+      ]
+    },
     "version": "3.4.0"
-  },
-  "passwd": {
-    "users": [
-      {
-        "groups": [
-          "wheel",
-          "docker"
-        ],
-        "homeDir": "/home/fixer",
-        "name": "fixer",
-        "passwordHash": "$6$9g9XjICLGkbiIFcR$lI8UBhWs7wxhEohYj1BbxrEy.X6yoXuJWADbsfWOo.0X2NljahUHjyBv9MkagHsx9hXjWBUej7hYu0E2P/9zB0",
-        "sshAuthorizedKeys": [
-          "AAAAC3NzaC1lZDI1NTE5AAAAIKguioxb528BXrSrJ/3v4eSBX2zi1ukPzadIuIvKQhZ5",
-          "AAAAC3NzaC1lZDI1NTE5AAAAIImlLeTqPZDaVe9RMc+LSKUnaTaOlTxvvdefx6CJg9E4"
-        ],
-        "shell": "/bin/bash"
-      }
-    ]
   },
   "storage": {
     "files": [
