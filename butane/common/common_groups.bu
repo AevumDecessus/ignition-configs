@@ -1,0 +1,22 @@
+variant: fcos
+version: 1.5.0
+passwd:
+  groups:
+    - name: media
+      gid: 2001
+    - name: camera
+      gid: 2002
+    - name: plex
+      gid: 2003
+    - name: calibre
+      gid: 2004
+    - name: misc
+      gid: 2005
+    - name: everyone
+      gid: 2006
+    - name: secure
+      gid: 2007
+    - name: fixer
+      gid: 7654
+    - name: docker_user
+      gid: 7890

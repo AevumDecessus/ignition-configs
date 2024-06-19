@@ -1,0 +1,45 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "passwd": {
+    "groups": [
+      {
+        "gid": 2001,
+        "name": "media"
+      },
+      {
+        "gid": 2002,
+        "name": "camera"
+      },
+      {
+        "gid": 2003,
+        "name": "plex"
+      },
+      {
+        "gid": 2004,
+        "name": "calibre"
+      },
+      {
+        "gid": 2005,
+        "name": "misc"
+      },
+      {
+        "gid": 2006,
+        "name": "everyone"
+      },
+      {
+        "gid": 2007,
+        "name": "secure"
+      },
+      {
+        "gid": 7654,
+        "name": "fixer"
+      },
+      {
+        "gid": 7890,
+        "name": "docker_user"
+      }
+    ]
+  }
+}
