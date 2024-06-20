@@ -7,10 +7,11 @@ passwd:
          - AAAAC3NzaC1lZDI1NTE5AAAAIKguioxb528BXrSrJ/3v4eSBX2zi1ukPzadIuIvKQhZ5
          - AAAAC3NzaC1lZDI1NTE5AAAAIImlLeTqPZDaVe9RMc+LSKUnaTaOlTxvvdefx6CJg9E4
        home_dir: /home/fixer
+       primary_group: fixer
+       no_user_group: true
        uid: 7654
        groups: 
-         - fixer
          - wheel
-         - docker
+         - sudo
        shell: /bin/bash
        password_hash: $6$9g9XjICLGkbiIFcR$lI8UBhWs7wxhEohYj1BbxrEy.X6yoXuJWADbsfWOo.0X2NljahUHjyBv9MkagHsx9hXjWBUej7hYu0E2P/9zB0

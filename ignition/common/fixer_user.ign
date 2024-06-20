@@ -6,13 +6,14 @@
     "users": [
       {
         "groups": [
-          "fixer",
           "wheel",
-          "docker"
+          "sudo"
         ],
         "homeDir": "/home/fixer",
         "name": "fixer",
+        "noUserGroup": true,
         "passwordHash": "$6$9g9XjICLGkbiIFcR$lI8UBhWs7wxhEohYj1BbxrEy.X6yoXuJWADbsfWOo.0X2NljahUHjyBv9MkagHsx9hXjWBUej7hYu0E2P/9zB0",
+        "primaryGroup": "fixer",
         "sshAuthorizedKeys": [
           "AAAAC3NzaC1lZDI1NTE5AAAAIKguioxb528BXrSrJ/3v4eSBX2zi1ukPzadIuIvKQhZ5",
           "AAAAC3NzaC1lZDI1NTE5AAAAIImlLeTqPZDaVe9RMc+LSKUnaTaOlTxvvdefx6CJg9E4"
