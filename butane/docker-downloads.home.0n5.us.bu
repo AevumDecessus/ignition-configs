@@ -1,0 +1,23 @@
+variant: fcos
+version: 1.5.0
+ignition:
+  config:
+    merge:
+      - local: ./ignition/common/common_groups.ign
+      - local: ./ignition/common/files.ign
+      - local: ./ignition/common/fixer_user.ign
+      - local: ./ignition/common/docker_mount.ign
+      - local: ./ignition/common/docker_user.ign
+      - local: ./ignition/common/packages.ign
+storage:
+  files:
+    - path: /etc/hostname
+      mode: 0644
+      contents:
+        inline: docker-downloads.home.0n5.us
+    - path: /etc/NetworkManager/system-connections/ens18.nmconnection
+      overwrite: false
+      append:
+        - inline: |
+            address1=192.168.202.44/23,192.168.202.1
+            dhcp-hostname=docker-downloads.home.0n5.us
