@@ -8,7 +8,7 @@
         },
         {
           "compression": "gzip",
-          "source": "data:;base64,H4sIAAAAAAAC/0xRQW6DMBC88wrLkm/BGAhVmhsR1/YDVQ8WLMEqXiN7kyiq+HtlkgZO1s6MxzPr34Qxbs5oyDjkRxZnxvgVfHgAvJR7qXjC2LyL2kDO6zOs0t6MEPiRfS0je8IL5a7gb95QVPd6DLBbuUnTEO0zoDb7BLo5//OhUZ/BZ+EeCGzaOkRoY7CQAYb8INGuGN+YtQ4JkMIr1Qu3k4fwX2VzJTZxF9/GaLzTpI87UZ1Wd1E1QtWmE2WzPC1UTfcJ4kgDeASKNBL4XreQorawkYrqZKbr/mHSYRBlk78XMn87yEIVssxFeXowaQDt20GUzeAsSIWVvAShaqvvaa/NKMpm2VyEgAYXA1mNFz0KVfNXnXmzDOu62GpfqCc2L+d3/MJkTv4CAAD//zK77tvyAQAA"
+          "source": "data:;base64,H4sIAAAAAAAC/0xRQY6jMBC88wrLkm/BQBxW2dyIuO5+YDQHyzTBGtxGdidRNOLvI5NM4GR1Vblc1f7OGOP2gpasR35iaWaM3yDEJ8CVPMiSZ4zNu6SN5IO+wCrt7QiRn9jHMrIXvFD+BuEeLCV1r8cIu5WbNA3JvgAyxX+guw9f/zTqC4QiPiKBy41HBJOCxQIwVkeJbsX4xsx4JECK71Rv3E0B4m+VzZXUxF+DSdF4p0mfdqI+r+6ibkXZ2E6odnlalA09JkgjDRAQKNFIEHptIEftYCMV9dlOt8PTpMMoVFv93cvqz1Huy71UlVDnJ5NH0MEMQrWDdyBLrOU1irJx+pH32o5CtcvmEgQ0+BTIabzqUZQNf9eZN8twvkut1PHwwubl/ExfmM3ZTwAAAP//io94W/IBAAA="
         },
         {
           "compression": "gzip",
@@ -48,8 +48,7 @@
             "compression": "",
             "source": "data:,address1%3D192.168.202.41%2F23%2C192.168.202.1%0Adhcp-hostname%3Ddocker-db.home.0n5.us%0A"
           }
-        ],
-        "mode": 420
+        ]
       }
     ]
   }

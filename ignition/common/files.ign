@@ -11,7 +11,7 @@
           "compression": "",
           "source": "data:,%5Bconnection%5D%0Aid%3Dens18%0Atype%3Dethernet%0Ainterface-name%3Dens18%0A%5Bipv4%5D%0Adns%3D192.168.202.31%3B%0Adns-search%3Dhome.0n5.us%0Amay-fail%3Dfalse%0Amethod%3Dmanual%0A"
         },
-        "mode": 420
+        "mode": 384
       }
     ]
   }
