@@ -1,0 +1,22 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "groups": [
+          "docker",
+          "video_media",
+          "calibre",
+          "secure"
+        ],
+        "name": "docker_user",
+        "noUserGroup": true,
+        "primaryGroup": "docker_user",
+        "shell": "/bin/bash",
+        "uid": 3001
+      }
+    ]
+  }
+}
