@@ -15,9 +15,10 @@ storage:
       mode: 0644
       contents:
         inline: docker-db.home.0n5.us
-    - path: /etc/sysconfig/network-scripts/ifcfg-ens192
+    - path: /etc/NetworkManager/system-connections/ens18.nmconnection
       mode: 0644
       overwrite: false
       append:
         - inline: |
-            IPADDR="192.168.202.41"
+            address1=192.168.202.41/23,192.168.202.1
+            dhcp-hostname=docker-db.home.0n5.us

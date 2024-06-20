@@ -8,7 +8,7 @@
         },
         {
           "compression": "gzip",
-          "source": "data:;base64,H4sIAAAAAAAC/1SRS3ObMBDH73wKja52Ij+YtLgnMLaLx++M06adHBQ9iGJAjFbGgY6/e0ekbahO2t2fdv9/7S8PIazSQlmlCzxBLkYIV8LAewKPb/3bAfYQuvYdC1YbmooPVKpMAJ6gn22I/qTbkq6EuRhlHS1pBqL/USupfXHtibCMQA1MF1KlpBD2os3pBphRpQWiJJPpjShgGIxw5zktS1Hwztj/R7cM03lpBPw1kjaq7LRoEdBnw5w8zKmlky/PFMSd3//qQxK+nykZ3id7aqb78C0MmmwRv4aD3nOg5sN8vdEvyfLzcVHuWXKOTMTPO3vgjfZh/qnp8UP0/VvwRncLlcW1TpaHeU8/ai5XTJKHh+JHvoLg0Z+OX0e8Po1zGx4PpObR6mRPA0mybczW6jxsLqsjiOXGVrP4nk/v1nZWke1uNvejMIwJaTbbcbDYOrG44+767/7U+bdcc2fXHw28Lvbk9utdvd8BAAD//6Vb25APAgAA"
+          "source": "data:;base64,H4sIAAAAAAAC/0xRQW6DMBC88wrLkm/BGAhVmhsR1/YDVQ8WLMEqXiN7kyiq+HtlkgZO1s6MxzPr34Qxbs5oyDjkRxZnxvgVfHgAvJR7qXjC2LyL2kDO6zOs0t6MEPiRfS0je8IL5a7gb95QVPd6DLBbuUnTEO0zoDb7BLo5//OhUZ/BZ+EeCGzaOkRoY7CQAYb8INGuGN+YtQ4JkMIr1Qu3k4fwX2VzJTZxF9/GaLzTpI87UZ1Wd1E1QtWmE2WzPC1UTfcJ4kgDeASKNBL4XreQorawkYrqZKbr/mHSYRBlk78XMn87yEIVssxFeXowaQDt20GUzeAsSIWVvAShaqvvaa/NKMpm2VyEgAYXA1mNFz0KVfNXnXmzDOu62GpfqCc2L+d3/MJkTv4CAAD//zK77tvyAQAA"
         },
         {
           "compression": "gzip",
@@ -42,11 +42,11 @@
       },
       {
         "overwrite": false,
-        "path": "/etc/sysconfig/network-scripts/ifcfg-ens192",
+        "path": "/etc/NetworkManager/system-connections/ens18.nmconnection",
         "append": [
           {
             "compression": "",
-            "source": "data:,IPADDR%3D%22192.168.202.41%22%0A"
+            "source": "data:,address1%3D192.168.202.41%2F23%2C192.168.202.1%0Adhcp-hostname%3Ddocker-db.home.0n5.us%0A"
           }
         ],
         "mode": 420
