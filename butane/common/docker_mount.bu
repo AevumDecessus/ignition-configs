@@ -6,9 +6,12 @@ systemd:
       enabled: true
       contents: | 
         [Unit]
-        Before=remote-fs.target
+        After=remote-fs.target
+        Requires=remote-fs.target
         [Mount]
         What=truenas.home.0n5.us:/mnt/fastdata/docker
         Where=/var/opt/docker
+        Type=nfs4
         [Install]
-        WantedBy=remote-fs.target
+        WantedBy=multi-user.target
+        RequiredBy=docker.service

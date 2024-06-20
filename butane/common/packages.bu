@@ -1,0 +1,30 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    # Installing vim as a layered package with rpm-ostree
+    - name: rpm-ostree-install-packages.service
+      enabled: true
+      contents: |
+        [Unit]
+        Description=Layer packages with rpm-ostree
+        Wants=network-online.target
+        After=network-online.target
+        # Run before zincati to avoid conflicting rpm-ostree
+        Before=zincati.service
+        ConditionPathExists=!/var/lib/%N.stamp
+        [Service]
+        Type=oneshot
+        RemainAfterExit=yes
+        ExecStart=/usr/bin/rpm-ostree install -y --allow-inactive vim docker-compose
+        ExecStart=/bin/touch /var/lib/%N.stamp
+        ExecStart=/bin/systemctl --no-block reboot
+        [Install]
+        WantedBy=multi-user.target
+storage:
+  files:
+    - path: /etc/profile.d/zz-default-editor.sh
+      overwrite: true
+      contents:
+        inline: |
+          export EDITOR=vim
