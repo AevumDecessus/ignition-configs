@@ -1,0 +1,17 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "storage": {
+    "files": [
+      {
+        "overwrite": true,
+        "path": "/etc/sysconfig/docker",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/4TOsU7DQAzG8T1P8anMVgbUDkh5AAYoEoxdrjmnMVzt6M5Hk7dHDdm72MP/Z8lPeLMowwIfuTBscjEtkAGLVdyCOtzQj0EvfDe4hdUiWv/DGTHw1RS5ammOH1+vx/fPbkdUOInWmVjDOXHEqQGIkl0oZvnl3H0XUxok8ZYiD6Emp5rkKg61e+sO+/3z4WWdmxMVpyn4iLaW3CY588x9+//Ntla0+Vo4p6CRpmzz8vByVTg1u+YvAAD//4tLhNgZAQAA"
+        }
+      }
+    ]
+  }
+}
