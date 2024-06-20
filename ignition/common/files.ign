@@ -1,0 +1,20 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "storage": {
+    "files": [
+      {
+        "overwrite": false,
+        "path": "/etc/sysconfig/network-scripts/ifcfg-ens192",
+        "append": [
+          {
+            "compression": "gzip",
+            "source": "data:;base64,H4sIAAAAAAAC/1SIQarCQAxA9zlGDjA0+b9iF1mMNohIJ8UGpQcIuBrBduPtRdzo4sF7z+dRBXW9xaPGilDyoIJRF+oYodfLcf/VVnZmLs9Y4C3j2dyk3mtAUR/ydBLktk0f/lODcMiu1zwLUseJNtvEDSdC6MtEv/OPEF4BAAD//zNO39GOAAAA"
+          }
+        ],
+        "mode": 420
+      }
+    ]
+  }
+}
