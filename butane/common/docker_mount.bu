@@ -14,3 +14,5 @@ systemd:
         Type=nfs4
         [Install]
         RequiredBy=docker.service
+    - name: docker.service
+      enabled: true

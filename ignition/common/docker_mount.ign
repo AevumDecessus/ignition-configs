@@ -8,6 +8,10 @@
         "contents": "[Unit]\nAfter=remote-fs.target\nRequires=remote-fs.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/fastdata/docker\nWhere=/var/opt/docker\nType=nfs4\n[Install]\nRequiredBy=docker.service\n",
         "enabled": true,
         "name": "var-opt-docker.mount"
+      },
+      {
+        "enabled": true,
+        "name": "docker.service"
       }
     ]
   }
