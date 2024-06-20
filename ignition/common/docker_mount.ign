@@ -5,9 +5,9 @@
   "systemd": {
     "units": [
       {
-        "contents": "[Unit]\nBefore=remote-fs.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/fastdata/docker\nWhere=/opt/docker\n[Install]\nWantedBy=remote-fs.target\n",
+        "contents": "[Unit]\nBefore=remote-fs.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/fastdata/docker\nWhere=/var/opt/docker\n[Install]\nWantedBy=remote-fs.target\n",
         "enabled": true,
-        "name": "opt-docker.mount"
+        "name": "var-opt-docker.mount"
       }
     ]
   }
