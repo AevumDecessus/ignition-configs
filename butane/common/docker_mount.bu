@@ -14,5 +14,3 @@ systemd:
         [Install]
         RequiredBy=docker.service
         WantedBy=multi-user.target
-    - name: docker.service
-      enabled: true
