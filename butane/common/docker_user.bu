@@ -12,3 +12,7 @@ passwd:
          - calibre
          - secure
        shell: /bin/bash
+systemd:
+  units:
+    - name: docker.service
+      enabled: true

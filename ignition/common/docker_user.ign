@@ -18,5 +18,13 @@
         "uid": 3001
       }
     ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "enabled": true,
+        "name": "docker.service"
+      }
+    ]
   }
 }
