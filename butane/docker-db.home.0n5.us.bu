@@ -16,3 +16,17 @@ storage:
         - inline: |
             address1=192.168.202.41/23,192.168.202.1
             dhcp-hostname=docker-db.home.0n5.us
+systemd:
+  units:
+    - name: var-opt-docker.mount
+      enabled: true
+      contents: |
+        [Unit]
+        Requires=network.target
+        [Mount]
+        What=truenas.home.0n5.us:/mnt/fastdata/docker/db
+        Where=/var/opt/docker
+        Type=nfs4
+        [Install]
+        RequiredBy=docker.service
+        WantedBy=multi-user.target
