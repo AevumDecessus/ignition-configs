@@ -28,5 +28,5 @@ systemd:
         Where=/var/opt/docker
         Type=nfs4
         [Install]
-        Requiremiscy=docker.service
-        Wantemiscy=multi-user.target
+        RequiredBy=docker.service
+        WantedBy=multi-user.target
