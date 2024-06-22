@@ -4,6 +4,8 @@ ignition:
   config:
     merge:
       - local: ./ignition/common/merge.ign
+      - local: ./ignition/mounts/audiobooks.ign
+      - local: ./ignition/mounts/calibre.ign
 storage:
   files:
     - path: /etc/hostname

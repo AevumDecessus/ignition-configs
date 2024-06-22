@@ -1,0 +1,16 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: var-opt-calibre.mount
+      enabled: true
+      contents: | 
+        [Unit]
+        Requires=network.target
+        [Mount]
+        What=truenas.home.0n5.us:/mnt/tank0/calibre
+        Where=/var/opt/calibre
+        Type=nfs4
+        [Install]
+        RequiredBy=docker.service
+        WantedBy=multi-user.target
