@@ -5,7 +5,7 @@ ignition:
     merge:
       - local: ./ignition/common/merge.ign
       - local: ./ignition/mounts/audiobooks.ign
-      - local: ./ignition/mounts/audiobooks-unsorted.ign
+      - local: ./ignition/mounts/audiobooks_unsorted.ign
       - local: ./ignition/mounts/calibre.ign
       - local: ./ignition/mounts/downloads.ign
 storage:
