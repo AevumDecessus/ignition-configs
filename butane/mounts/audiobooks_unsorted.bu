@@ -2,14 +2,14 @@ variant: fcos
 version: 1.5.0
 systemd:
   units:
-    - name: var-opt-audiobooks-unsorted.mount
+    - name: var-opt-audiobooks_unsorted.mount
       enabled: true
       contents: | 
         [Unit]
         Requires=network.target
         [Mount]
-        What=truenas.home.0n5.us:/mnt/tank0/audiobooks-unsorted
-        Where=/var/opt/audiobooks-unsorted
+        What=truenas.home.0n5.us:/mnt/tank0/audiobooks_unsorted
+        Where=/var/opt/audiobooks_unsorted
         Type=nfs4
         [Install]
         RequiredBy=docker.service
