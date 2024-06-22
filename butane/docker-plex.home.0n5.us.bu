@@ -4,7 +4,7 @@ ignition:
   config:
     merge:
       - local: ./ignition/common/merge_no_packages.ign
-      - local: ./ignition/common/ucore-nvidia-autorebase.ign
+      - local: ./ignition/nvidia/merge-nvidia.ign
       - local: ./ignition/mounts/anime.ign
       - local: ./ignition/mounts/anime_movies.ign
       - local: ./ignition/mounts/cartoons.ign
