@@ -4,6 +4,18 @@ ignition:
   config:
     merge:
       - local: ./ignition/common/merge.ign
+      - local: ./ignition/mounts/anime.ign
+      - local: ./ignition/mounts/anime_movies.ign
+      - local: ./ignition/mounts/cartoons.ign
+      - local: ./ignition/mounts/documentary_films.ign
+      - local: ./ignition/mounts/documentary_series.ign
+      - local: ./ignition/mounts/kids_tv.ign
+      - local: ./ignition/mounts/live_media.ign
+      - local: ./ignition/mounts/movies.ign
+      - local: ./ignition/mounts/movies_4k.ign
+      - local: ./ignition/mounts/music.ign
+      - local: ./ignition/mounts/tv.ign
+      - local: ./ignition/mounts/tv_4k.ign
 storage:
   files:
     - path: /etc/hostname
