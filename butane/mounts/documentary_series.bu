@@ -1,0 +1,16 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: var-opt-documentary_series.mount
+      enabled: true
+      contents: | 
+        [Unit]
+        Requires=network.target
+        [Mount]
+        What=truenas.home.0n5.us:/mnt/tank0/documentary_series
+        Where=/var/opt/documentary_series
+        Type=nfs4
+        [Install]
+        RequiredBy=docker.service
+        WantedBy=multi-user.target
