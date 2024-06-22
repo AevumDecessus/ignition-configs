@@ -16,6 +16,8 @@ passwd:
       gid: 2006
     - name: secure
       gid: 2007
+    - name: db
+      gid:  2008
     - name: fixer
       gid: 7654
     - name: docker_user
