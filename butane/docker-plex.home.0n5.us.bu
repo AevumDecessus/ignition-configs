@@ -3,7 +3,7 @@ version: 1.5.0
 ignition:
   config:
     merge:
-      - local: ./ignition/common/merge.ign
+      - local: ./ignition/common/merge_no_packages.ign
       - local: ./ignition/common/ucore-nvidia-autorebase.ign
       - local: ./ignition/mounts/anime.ign
       - local: ./ignition/mounts/anime_movies.ign
