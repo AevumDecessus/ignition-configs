@@ -1,0 +1,16 @@
+variant: fcos
+version: 1.5.0
+storage:
+  files:
+    - path: /etc/docker/daemon.json
+      overwrite: true
+      contents:
+        inline: |
+          {
+            "runtimes": {
+              "nvidia": {
+                "args": [],
+                "path": "nvidia-container-runtime"
+              }
+            }
+          }

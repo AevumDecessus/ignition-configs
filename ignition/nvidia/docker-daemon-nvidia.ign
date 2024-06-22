@@ -1,0 +1,17 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "storage": {
+    "files": [
+      {
+        "overwrite": true,
+        "path": "/etc/docker/daemon.json",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/6rmUlBQKirNK8nMTS1WslIA8RUUlPLKMlMyE+F8BQWlxKJ0kHx0rA5MpCCxJEPJCqZWNzk/ryQxMy+1SBdqnBJYYS0XCNdyAQIAAP//c/RY+mkAAAA="
+        }
+      }
+    ]
+  }
+}
