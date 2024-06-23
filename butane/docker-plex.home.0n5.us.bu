@@ -15,6 +15,7 @@ ignition:
       - local: ./ignition/mounts/movies.ign
       - local: ./ignition/mounts/movies_4k.ign
       - local: ./ignition/mounts/music.ign
+      - local: ./ignition/mounts/plex_meta.ign
       - local: ./ignition/mounts/tv.ign
       - local: ./ignition/mounts/tv_4k.ign
 storage:
