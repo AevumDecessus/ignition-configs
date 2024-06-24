@@ -16,7 +16,7 @@
         "path": "/etc/hostname",
         "contents": {
           "compression": "",
-          "source": "data:,docker-misc.home.0n5.us"
+          "source": "data:,docker-network.home.0n5.us"
         },
         "mode": 420
       },
