@@ -4,6 +4,7 @@ ignition:
   config:
     merge:
       - local: ./ignition/common/merge.ign
+      - local: ./ignition/ucore/merge-ucore.ign
 storage:
   files:
     - path: /etc/hostname
