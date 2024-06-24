@@ -1,0 +1,7 @@
+variant: fcos
+version: 1.5.0
+ignition:
+  config:
+    merge:
+      - local: ./ignition/ucore/ucore-autorebase.ign
+      - local: ./ignition/ucore/ucore-disable-firewalld.ign

@@ -3,6 +3,7 @@ version: 1.5.0
 ignition:
   config:
     merge:
-      - local: ./ignition/nvidia/ucore-nvidia-autorebase.ign
+      - local: ./ignition/ucore/ucore-nvidia-autorebase.ign
+      - local: ./ignition/ucore/ucore-disable-firewalld.ign
       - local: ./ignition/nvidia/docker-daemon-nvidia.ign
       - local: ./ignition/nvidia/nvidia-sebool.ign

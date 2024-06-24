@@ -1,0 +1,14 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "systemd": {
+    "units": [
+      {
+        "contents": "[Unit]\nDescription=Disable firewalld after rebasing to ucore\nConditionPathExists=/etc/ucore-autorebase/unverified\nConditionPathExists=/etc/ucore-autorebase/verified\nConditionPathExists=!/etc/ucore-autorebase/firewalld-disabled\nAfter=network-online.target\nWants=network-online.target\n[Service]\nType=oneshot\nStandardOutput=journal+console\nExecStart=/usr/bin/touch /etc/ucore-autorebase/firewalld-disabled\nExecStart=/usr/bin/systemctl disable firewalld\n[Install]\nWantedBy=multi-user.target\n",
+        "enabled": true,
+        "name": "ucore-disable-firewalld.service"
+      }
+    ]
+  }
+}

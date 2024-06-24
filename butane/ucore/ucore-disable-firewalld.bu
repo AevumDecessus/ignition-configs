@@ -1,0 +1,21 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: ucore-disable-firewalld.service
+      enabled: true
+      contents: |
+        [Unit]
+        Description=Disable firewalld after rebasing to ucore
+        ConditionPathExists=/etc/ucore-autorebase/unverified
+        ConditionPathExists=/etc/ucore-autorebase/verified
+        ConditionPathExists=!/etc/ucore-autorebase/firewalld-disabled
+        After=network-online.target
+        Wants=network-online.target
+        [Service]
+        Type=oneshot
+        StandardOutput=journal+console
+        ExecStart=/usr/bin/touch /etc/ucore-autorebase/firewalld-disabled
+        ExecStart=/usr/bin/systemctl disable firewalld
+        [Install]
+        WantedBy=multi-user.target
