@@ -11,7 +11,7 @@
           "calibre",
           "secure"
         ],
-        "homeDir": "/var/opt/docker/home",
+        "homeDir": "/var/opt/docker",
         "name": "docker_user",
         "noCreateHome": true,
         "noUserGroup": true,

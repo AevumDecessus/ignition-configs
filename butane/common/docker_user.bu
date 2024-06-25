@@ -12,7 +12,7 @@ passwd:
          - calibre
          - secure
        shell: /bin/bash
-       home_dir: /var/opt/docker/home
+       home_dir: /var/opt/docker
        no_create_home: true
 systemd:
   units:
