@@ -5,7 +5,8 @@ passwd:
      - name: fixer
        ssh_authorized_keys:
          - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKguioxb528BXrSrJ/3v4eSBX2zi1ukPzadIuIvKQhZ5
-       home_dir: /home/fixer
+       home_dir: /var/opt/fixer
+       no_create_home: true
        primary_group: fixer
        no_user_group: true
        uid: 7654

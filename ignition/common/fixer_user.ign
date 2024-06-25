@@ -9,8 +9,9 @@
           "wheel",
           "sudo"
         ],
-        "homeDir": "/home/fixer",
+        "homeDir": "/var/opt/fixer",
         "name": "fixer",
+        "noCreateHome": true,
         "noUserGroup": true,
         "passwordHash": "$6$9g9XjICLGkbiIFcR$lI8UBhWs7wxhEohYj1BbxrEy.X6yoXuJWADbsfWOo.0X2NljahUHjyBv9MkagHsx9hXjWBUej7hYu0E2P/9zB0",
         "primaryGroup": "fixer",
