@@ -1,0 +1,15 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: var-opt-fixer.mount
+      enabled: true
+      contents: | 
+        [Unit]
+        Requires=network.target
+        [Mount]
+        What=truenas.home.0n5.us:/mnt/fastdata/fixer
+        Where=/var/opt/fixer
+        Type=nfs4
+        [Install]
+        WantedBy=multi-user.target
