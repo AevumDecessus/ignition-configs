@@ -12,6 +12,8 @@ passwd:
          - calibre
          - secure
        shell: /bin/bash
+       home_dir: /var/opt/docker/home
+       no_create_home: true
 systemd:
   units:
     - name: docker.service
