@@ -3,7 +3,7 @@ version: 1.5.0
 ignition:
   config:
     merge:
-      - local: ./ignition/common/merge.ign
+      - local: ./ignition/ucore/merge-ucore.ign
 storage:
   files:
     - path: /etc/hostname
