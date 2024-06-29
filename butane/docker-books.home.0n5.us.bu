@@ -3,7 +3,7 @@ version: 1.5.0
 ignition:
   config:
     merge:
-      - local: ./ignition/common/merge.ign
+      - local: ./ignition/ucore/merge-ucore.ign
       - local: ./ignition/mounts/audiobooks.ign
       - local: ./ignition/mounts/audiobooks_unsorted.ign
       - local: ./ignition/mounts/calibre.ign
