@@ -1,0 +1,14 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "systemd": {
+    "units": [
+      {
+        "contents": "# so we can use gpu in containers\n[Unit]\nBefore=sshd.service\nAfter=network-online.target\n[Service]\nType=oneshot \nExecStart=setsebool use_nfs_home_dirs true\nRemainAfterExit=yes\n[Install]\nWantedBy=multi-user.target\n",
+        "enabled": true,
+        "name": "setsebool-nfs-home.service"
+      }
+    ]
+  }
+}

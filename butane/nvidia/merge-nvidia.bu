@@ -8,3 +8,4 @@ ignition:
       - local: ./ignition/ucore/ucore-disable-firewalld.ign
       - local: ./ignition/nvidia/docker-daemon-nvidia.ign
       - local: ./ignition/nvidia/nvidia-sebool.ign
+      - local: ./ignition/ucore/nfs-home-sebool.ign

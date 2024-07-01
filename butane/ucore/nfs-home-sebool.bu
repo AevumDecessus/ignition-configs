@@ -1,0 +1,17 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: setsebool-nfs-home.service
+      enabled: true
+      contents: |
+        # so we can use gpu in containers
+        [Unit]
+        Before=sshd.service
+        After=network-online.target
+        [Service]
+        Type=oneshot 
+        ExecStart=setsebool use_nfs_home_dirs true
+        RemainAfterExit=yes
+        [Install]
+        WantedBy=multi-user.target
