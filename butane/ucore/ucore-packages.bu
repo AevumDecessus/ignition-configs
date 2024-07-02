@@ -1,0 +1,31 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: ucore-install-packages.service
+      enabled: true
+      contents: |
+        [Unit]
+        Description=Install packages after rebasing to ucore and disabling firewalld
+        ConditionPathExists=/etc/ucore-autorebase/unverified
+        ConditionPathExists=/etc/ucore-autorebase/signed
+        ConditionPathExists=/etc/ucore-autorebase/firewalld-disabled
+        ConditionPathExists=!/etc/ucore-autorebase/ucore-packages
+        After=network-online.target
+        Wants=network-online.target
+        [Service]
+        Type=oneshot
+        StandardOutput=journal+console
+        ExecStart=/usr/bin/touch /etc/ucore-autorebase/ucore-packages
+        ExecStart=/usr/bin/rpm-ostree install -y --allow-inactive vim
+        ExecStart=/usr/bin/systemctl reboot
+        [Install]
+        WantedBy=multi-user.target
+
+storage:
+  files:
+    - path: /etc/profile.d/zz-default-editor.sh
+      overwrite: true
+      contents:
+        inline: |
+          export EDITOR=vim
