@@ -9,7 +9,7 @@ systemd:
         Description=Install packages after rebasing to ucore and disabling firewalld
         ConditionPathExists=/etc/ucore-autorebase/unverified
         ConditionPathExists=/etc/ucore-autorebase/signed
-        ConditionPathExists=/etc/ucore-autorebase/firewalld-disabled
+        ConditionPathExists=/etc/ucore-autorebase/services-disabled
         ConditionPathExists=!/etc/ucore-autorebase/ucore-packages
         After=network-online.target
         Wants=network-online.target
