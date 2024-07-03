@@ -5,7 +5,7 @@ ignition:
     merge:
       - local: ./ignition/common/merge_no_packages.ign
       - local: ./ignition/ucore/ucore-nvidia-autorebase.ign
-      - local: ./ignition/ucore/ucore-disable-firewalld.ign
+      - local: ./ignition/ucore/ucore-disable-services.ign
       - local: ./ignition/ucore/ucore-packages.ign
       - local: ./ignition/nvidia/docker-daemon-nvidia.ign
       - local: ./ignition/nvidia/nvidia-sebool.ign

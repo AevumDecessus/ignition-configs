@@ -7,4 +7,4 @@ ignition:
       - local: ./ignition/ucore/nfs-home-sebool.ign
       - local: ./ignition/ucore/ucore-autorebase.ign
       - local: ./ignition/ucore/ucore-packages.ign
-      - local: ./ignition/ucore/ucore-disable-firewalld.ign
+      - local: ./ignition/ucore/ucore-disable-services.ign

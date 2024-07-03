@@ -9,13 +9,14 @@ systemd:
         Description=Disable firewalld after rebasing to ucore
         ConditionPathExists=/etc/ucore-autorebase/unverified
         ConditionPathExists=/etc/ucore-autorebase/signed
-        ConditionPathExists=!/etc/ucore-autorebase/firewalld-disabled
+        ConditionPathExists=!/etc/ucore-autorebase/services-disabled
         After=network-online.target
         Wants=network-online.target
         [Service]
         Type=oneshot
         StandardOutput=journal+console
-        ExecStart=/usr/bin/touch /etc/ucore-autorebase/firewalld-disabled
+        ExecStart=/usr/bin/touch /etc/ucore-autorebase/services-disabled
         ExecStart=/usr/bin/systemctl disable --now firewalld
+        ExecStart=/usr/bin/systemctl reboot
         [Install]
         WantedBy=multi-user.target
