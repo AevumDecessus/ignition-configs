@@ -8,7 +8,7 @@ systemd:
         [Unit]
         Requires=network.target
         [Mount]
-        What=truenas.home.0n5.us:/mnt/tank1/sabnzbd
+        What=truenas.home.0n5.us:/mnt/scrapdata/sabnzbd
         Where=/var/opt/sabnzbd
         Type=nfs4
         [Install]
