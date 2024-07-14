@@ -1,0 +1,48 @@
+{
+  "ignition": {
+    "config": {
+      "merge": [
+        {
+          "compression": "gzip",
+          "source": "data:;base64,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"
+        },
+        {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/0yQMW+zMBCGd36F5TkxSMm3ILF8W4cuVasMEFUuXBMLfKZ3ZypU8d8r0yhkOt09z/C+95Mppd0FnbiAulRpV0pPQPx30AdzNIXOlFp2yeWZBXy3qRGdsC5Vva7qdl5RG1AAV6rrN3RybvAFvqIj4ApBvgP1RixdQBqsn0PEZJyuViqhCGjZXIMHU+A/E7nMPUouFvsiP3TvPnQwcNKBoMonS3kY5ZG8ziNU+MnHBusnZLHDsAXo/s9VF9oeyDDQ5Fpo8GRRVuDjIG4fGegeT++2XoD2Y4D0gxTzAaD1kMpOlvZhlP09jPGpnL6ZyzrP6afZkv0GAAD//+WhA4aDAQAA"
+        }
+      ]
+    },
+    "version": "3.4.0"
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/hostname",
+        "contents": {
+          "compression": "",
+          "source": "data:,docker-apps.home.0n5.us"
+        },
+        "mode": 420
+      },
+      {
+        "overwrite": false,
+        "path": "/etc/NetworkManager/system-connections/ens18.nmconnection",
+        "append": [
+          {
+            "compression": "",
+            "source": "data:,address1%3D192.168.202.38%2F23%2C192.168.202.1%0Adhcp-hostname%3Ddocker-apps.home.0n5.us%0A"
+          }
+        ]
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "contents": "[Unit]\nRequires=network.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/fastdata/docker/apps\nWhere=/var/opt/docker\nType=nfs4\n[Install]\nRequiredBy=docker.service\nWantedBy=multi-user.target\n",
+        "enabled": true,
+        "name": "var-opt-docker.mount"
+      }
+    ]
+  }
+}
