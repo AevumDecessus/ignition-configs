@@ -8,6 +8,7 @@
         "groups": [
           "docker",
           "video_media",
+          "misc",
           "calibre",
           "secure"
         ],

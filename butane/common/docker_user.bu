@@ -9,6 +9,7 @@ passwd:
        groups:
          - docker
          - video_media
+         - misc
          - calibre
          - secure
        shell: /bin/bash

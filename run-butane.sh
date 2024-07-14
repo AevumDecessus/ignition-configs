@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #set -x
 declare -a merge=("butane/common/merge.bu" "butane/common/merge_no_packages.bu" "butane/ucore/merge-ucore.bu" "butane/nvidia/merge-nvidia.bu")
-declare -a hosts=("books" "db" "downloads" "lead1" "lead2" "misc" "network" "network2" "plex" "secure" "web")
+declare -a hosts=("apps" "books" "db" "downloads" "lead1" "lead2" "misc" "network" "network2" "plex" "secure" "web")
 
 END=""
 
