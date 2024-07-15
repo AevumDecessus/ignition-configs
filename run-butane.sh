@@ -2,6 +2,7 @@
 #set -x
 declare -a merge=("butane/common/merge.bu" "butane/common/merge_no_packages.bu" "butane/ucore/merge-ucore.bu" "butane/nvidia/merge-nvidia.bu")
 declare -a hosts=("apps" "books" "db" "downloads" "lead1" "lead2" "misc" "network" "network2" "plex" "secure" "web")
+declare -a mounts=("3d_models" "anime" "anime_movies" "audiobooks" "audiobooks_unsorted" "calibre" "cartoons" "comics" "documentary_films" "documentary_series" "downloads" "kids_tv" "live_media" "movies_4k" "movies" "music" "plex_meta" "sabnzbd" "tv_4k" "tv")
 
 END=""
 
@@ -26,12 +27,20 @@ do_merge() {
 do_hosts() {
   for host in "${hosts[@]}"
   do
-    echo "${host}"
+    echo "host docker-${host}.home.0n5.us"
     FILE="butane/docker-${host}.home.0n5.us.bu"
     process_file
   done
 }
 
+do_mounts() {
+  for mount in "${mounts[@]}"
+  do
+    echo "mount ${mount}"
+    FILE="butane/mounts/${mount}.bu"
+    process_file
+  done
+}
 process_file() {
   find_end
   $(docker run --rm --interactive         \
@@ -46,6 +55,7 @@ process_file() {
 
 process_all() {
   do_merge
+  do_mounts
   do_hosts
 }
 FILE=$1
