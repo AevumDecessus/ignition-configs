@@ -6,7 +6,7 @@ systemd:
       enabled: true
       contents: | 
         [Unit]
-        Requires=network.target
+        Requires=network-online.target
         [Mount]
         What=truenas.home.0n5.us:/mnt/tank0/documentary_series
         Where=/var/opt/documentary_series

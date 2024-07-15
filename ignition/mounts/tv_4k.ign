@@ -5,7 +5,7 @@
   "systemd": {
     "units": [
       {
-        "contents": "[Unit]\nRequires=network.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/tank1/tv_4k\nWhere=/var/opt/tv_4k\nType=nfs4\n[Install]\nRequiredBy=docker.service\nWantedBy=multi-user.target\n",
+        "contents": "[Unit]\nRequires=network-online.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/tank1/tv_4k\nWhere=/var/opt/tv_4k\nType=nfs4\n[Install]\nRequiredBy=docker.service\nWantedBy=multi-user.target\n",
         "enabled": true,
         "name": "var-opt-tv_4k.mount"
       }
