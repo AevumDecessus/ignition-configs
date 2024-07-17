@@ -28,6 +28,8 @@ do_hosts() {
   for host in "${hosts[@]}"
   do
     echo "host docker-${host}.home.0n5.us"
+    FILE="butane/motd/${host}.bu"
+    process_file
     FILE="butane/docker-${host}.home.0n5.us.bu"
     process_file
   done
