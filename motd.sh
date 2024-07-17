@@ -31,6 +31,10 @@ storage:
       contents:
         source: https://raw.githubusercontent.com/AevumDecessus/ignition-configs/main/motd/$HOST
       mode: 0644
+    - path: /etc/issue.d/00_figlet.issue
+      contents:
+        source: https://raw.githubusercontent.com/AevumDecessus/ignition-configs/main/motd/$HOST
+      mode: 0644
 EOF
 }
 
