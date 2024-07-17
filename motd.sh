@@ -9,9 +9,9 @@ do_hosts() {
   for host in "${hosts[@]}"
   do
     OUT=${SOURCE_DIR}/motd/${host}
-    echo ${RED} > ${OUT}
-    figlet ${host} >> ${OUT}
-    echo ${NONE} >> ${OUT}
+    #echo ${RED} > ${OUT}
+    figlet ${host} > ${OUT}
+    #echo ${NONE} >> ${OUT}
   done
 }
 
