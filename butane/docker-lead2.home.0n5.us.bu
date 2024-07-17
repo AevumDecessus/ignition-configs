@@ -4,6 +4,7 @@ ignition:
   config:
     merge:
       - local: ./ignition/ucore/merge-ucore.ign
+      - local: ./ignition/motd/lead2.ign
 storage:
   files:
     - path: /etc/hostname

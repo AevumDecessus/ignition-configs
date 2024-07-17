@@ -8,6 +8,7 @@ ignition:
       - local: ./ignition/mounts/audiobooks_unsorted.ign
       - local: ./ignition/mounts/calibre.ign
       - local: ./ignition/mounts/downloads.ign
+      - local: ./ignition/motd/books.ign
 storage:
   files:
     - path: /etc/hostname

@@ -5,6 +5,7 @@ ignition:
     merge:
       - local: ./ignition/ucore/merge-ucore.ign
       - local: ./ignition/mounts/3d_models.ign
+      - local: ./ignition/motd/apps.ign
 storage:
   files:
     - path: /etc/hostname

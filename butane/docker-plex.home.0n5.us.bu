@@ -17,6 +17,7 @@ ignition:
       - local: ./ignition/mounts/plex_meta.ign
       - local: ./ignition/mounts/tv.ign
       - local: ./ignition/mounts/tv_4k.ign
+      - local: ./ignition/motd/plex.ign
 storage:
   files:
     - path: /etc/hostname

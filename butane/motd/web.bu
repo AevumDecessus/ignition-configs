@@ -1,0 +1,8 @@
+variant: fcos
+version: 1.5.0
+storage:
+  files:
+    - path: /etc/motd.d/00-figlet.conf
+      contents:
+        source: https://raw.githubusercontent.com/AevumDecessus/ignition-configs/main/motd/web
+      mode: 0644

@@ -1,0 +1,16 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/motd.d/00-figlet.conf",
+        "contents": {
+          "source": "https://raw.githubusercontent.com/AevumDecessus/ignition-configs/main/motd/lead1"
+        },
+        "mode": 420
+      }
+    ]
+  }
+}
