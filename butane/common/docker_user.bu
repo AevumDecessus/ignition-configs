@@ -11,6 +11,7 @@ passwd:
          - video_media
          - misc
          - calibre
+         - camera
          - secure
        shell: /bin/bash
        home_dir: /var/opt/docker

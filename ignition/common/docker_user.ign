@@ -10,6 +10,7 @@
           "video_media",
           "misc",
           "calibre",
+          "camera",
           "secure"
         ],
         "homeDir": "/var/opt/docker",
