@@ -5,6 +5,8 @@ ignition:
     merge:
       - local: ./ignition/ucore/merge-ucore.ign
       - local: ./ignition/mounts/3d_models.ign
+      - local: ./ignition/mounts/camera.ign
+      - local: ./ignition/mounts/digikam.ign
       - local: ./ignition/motd/apps.ign
 storage:
   files:
