@@ -43,6 +43,15 @@ do_mounts() {
     process_file
   done
 }
+
+do_docker_mounts() {
+  for mount in "${docker[@]}"
+  do
+    echo "docker mount ${mount}"
+    FILE="butane/mounts/docker/${mount}.bu"
+    process_file
+  done
+}
 process_file() {
   find_end
   $(docker run --rm --interactive         \
@@ -58,11 +67,16 @@ process_file() {
 process_all() {
   do_merge
   do_mounts
+  do_docker_mounts
   do_hosts
 }
 FILE=$1
 if [ ${FILE} == "all" ]; then {
   process_all
+}
+elif [ ${FILE} == "mounts" ]; then {
+  do_mounts
+  do_docker_mounts
 }
 else {
   process_file
