@@ -74,6 +74,9 @@ FILE=$1
 if [ ${FILE} == "all" ]; then {
   process_all
 }
+elif [ ${FILE} == "hosts" ]; then {
+  do_hosts
+}
 elif [ ${FILE} == "mounts" ]; then {
   do_mounts
   do_docker_mounts

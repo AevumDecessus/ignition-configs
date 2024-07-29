@@ -64,6 +64,10 @@
         },
         {
           "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/0yQMW/CMBCF9/wKyzPYSKULUpZuHbpUrRgShis+wCI+U985KKry3yuHqOlk3b3PuvfeT6WU9mfy4iPpnSqzUrrHxI+FfjJbs9GVUuOqsDywYHALmskL651qplHN60k6RhKkSdXNJ3k5tPSO39kn5JpQ7jFdjUA6o7TUvMVMhdhfQGpJGQnYXGJAs6Fnk3lnA4k9AYsDAevi8YrJuninLoLj8hET1raHZONNZqClj+GGNZ1421LzSizQdYsP9zLUD9Awpt4fsaU9kExCyJ34dWZMfy71aomHBF8dliqK238CQcCSuYe0jjdZzwdCCahnbJzeQ+m1GqvfAAAA//9QBf+GhwEAAA=="
+        },
+        {
+          "compression": "gzip",
           "source": "data:;base64,H4sIAAAAAAAC/9SRwUoEMQyG7/MUpefddtA9zU3wLUSktplOYNosTbp7kHl3aR13RfABPJX8+Zs/H/kYlNIYMwpS1pNqtVL6AoW/BP1oTmbUg1LboXlZqLgId+uMK7Ce1Esv1S731tnJ0kZYEG8TSTDBjuNxxriCGE951oe721MWyMK30bvOVItvgXoROfNkbXFXE1GW+l4Zyv7PeEr2CS41PYMH5sr2m+vYojCyTQ5zX8QGuuaVXGB9i9p+7JIotMTTwzj8av6Fh8wVOt/bzteV/wPY39d252EbPgMAAP//CtoWOxcCAAA="
         }
       ]
@@ -89,15 +93,6 @@
             "source": "data:,address1%3D192.168.202.44%2F23%2C192.168.202.1%0Adhcp-hostname%3Ddocker-downloads.home.0n5.us%0A"
           }
         ]
-      }
-    ]
-  },
-  "systemd": {
-    "units": [
-      {
-        "contents": "[Unit]\nRequires=network.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/fastdata/docker/downloads\nWhere=/var/opt/docker\nType=nfs4\n[Install]\nRequiredBy=docker.service\nWantedBy=multi-user.target\n",
-        "enabled": true,
-        "name": "var-opt-docker.mount"
       }
     ]
   }

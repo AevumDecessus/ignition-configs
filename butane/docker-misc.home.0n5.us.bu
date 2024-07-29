@@ -4,6 +4,7 @@ ignition:
   config:
     merge:
       - local: ./ignition/ucore/merge-ucore.ign
+      - local: ./ignition/mounts/docker/misc.ign
       - local: ./ignition/motd/misc.ign
 storage:
   files:
@@ -17,17 +18,3 @@ storage:
         - inline: |
             address1=192.168.202.49/23,192.168.202.1
             dhcp-hostname=docker-misc.home.0n5.us
-systemd:
-  units:
-    - name: var-opt-docker.mount
-      enabled: true
-      contents: |
-        [Unit]
-        Requires=network.target
-        [Mount]
-        What=truenas.home.0n5.us:/mnt/fastdata/docker/misc
-        Where=/var/opt/docker
-        Type=nfs4
-        [Install]
-        RequiredBy=docker.service
-        WantedBy=multi-user.target

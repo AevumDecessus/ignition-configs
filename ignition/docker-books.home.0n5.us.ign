@@ -24,6 +24,10 @@
         },
         {
           "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/0yQsW6DMBCGd57C8pzYkZoukVi6dehStcoAGS7hkljgM/WdqVDFu1cmqHRCd9+H/P/3Uyil3Y2cuED6oPKslB4w8mOhn8ze7HSh1LTJLo8s6JtVTeSE9UFV86iW9YwugQRpprr6JCenmt7xK7mIXBLKd4itEYg3lJqqt5AoG8c7SCkxIQGbe/BodvRsEh+sJ7FXYGlAwDbh0mK05xBazj9hxNIOEG3oZYE1fYw9lnTlfU3VK7FA160ZmpexfIiGMQ7ugjUdgWQGPnXitokx/iXUm7UaEpw7zGfISf8BAo+57wBxG3rZLg/4XE4v2jR/T/mmxVT8BgAA///sZc3qgwEAAA=="
+        },
+        {
+          "compression": "gzip",
           "source": "data:;base64,H4sIAAAAAAAC/9SRwU7DMAyG732KKOctrmCn3pB4C4RQl7qpxRJPsTMOqO+OEsqGkHiAnSL//uPfn/zZGWMpJFLiZAdTa2PsBbN8C/bRHVxvO2PWXfWKch4D3qwznVDsYF5aaTa5tc6jLnUEoHqIrJOboO/3M4UTqvOcZru7uT0nxaRyHb3pwiX7GmgX1bMMAHn8cIF0KccimLd/znOEJ7yU+IweRYrAD9e+RlEQiCOltggcmd/FXmPWX3tEnmra4aHv/jT/QyORgo3tbWNryn3Atfe13rdbu68AAAD//zFQ20kPAgAA"
         }
       ]
@@ -49,15 +53,6 @@
             "source": "data:,address1%3D192.168.202.46%2F23%2C192.168.202.1%0Adhcp-hostname%3Ddocker-books.home.0n5.us%0A"
           }
         ]
-      }
-    ]
-  },
-  "systemd": {
-    "units": [
-      {
-        "contents": "[Unit]\nRequires=network.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/fastdata/docker/books\nWhere=/var/opt/docker\nType=nfs4\n[Install]\nRequiredBy=docker.service\nWantedBy=multi-user.target\n",
-        "enabled": true,
-        "name": "var-opt-docker.mount"
       }
     ]
   }

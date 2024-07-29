@@ -8,6 +8,10 @@
         },
         {
           "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/0yQMW+zMBCGd36F5TmxI335FiSWbh26VK0yQIYrXBIr+Ex9ZypU8d8rE1Q6obvnQX7f+y6U0u5KTlwgXao8K6VHjPxY6H/maA66UGreZZcnFvTdpiZywrpU9TKqdb2gNpAgLVTX7+Tk3NArfiYXkStC+QrxbgTiFaWh+iUkysbpBlJJTEjA5hY8mgP9N4lL60nsBVg6ELBdaO8YrXfc5n8wYmVHiDYMsrKG3qYBK7rwsaH6mVig77cI3dNUPUTDGEfXYkMnIFmAT724fWKMvwH1bmuGBB895ivkoH8Agcdcd4S4D4Ps1wd87qZXbV6+53zSYi5+AgAA//8kfH78ggEAAA=="
+        },
+        {
+          "compression": "gzip",
           "source": "data:;base64,H4sIAAAAAAAC/9SRQWozMQyF9z6F0Tqxhv/PanaF3qKUMvVoPILYDpacLsrcvdidJqXQA3Rl9PSspw+9G2uBQ2LlnGC0rbYWrlTkU4D/7uQGMNZuh+YVzWUKdLcufCaB0T710u5yb10mXdsIJPUYs85uxmE4LhzOpM7ntMDh7vY5KSWV2+hdl1yLb4Gwql5kRCzTmwusa32tQmX/53yO+EDXGh/Jk0gV/OI6tigOgnHi1BfByOLhlrJ9WyPmuYWd/g3mR/M3Mhap1NFedrSu/Am2/j6365rNfAQAAP//V0dgwA0CAAA="
         }
       ]
@@ -33,15 +37,6 @@
             "source": "data:,address1%3D192.168.202.49%2F23%2C192.168.202.1%0Adhcp-hostname%3Ddocker-misc.home.0n5.us%0A"
           }
         ]
-      }
-    ]
-  },
-  "systemd": {
-    "units": [
-      {
-        "contents": "[Unit]\nRequires=network.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/fastdata/docker/misc\nWhere=/var/opt/docker\nType=nfs4\n[Install]\nRequiredBy=docker.service\nWantedBy=multi-user.target\n",
-        "enabled": true,
-        "name": "var-opt-docker.mount"
       }
     ]
   }

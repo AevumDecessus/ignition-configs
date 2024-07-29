@@ -4,6 +4,7 @@ ignition:
   config:
     merge:
       - local: ./ignition/ucore/merge-ucore.ign
+      - local: ./ignition/mounts/docker/simple.ign
       - local: ./ignition/motd/lead1.ign
 storage:
   files:
