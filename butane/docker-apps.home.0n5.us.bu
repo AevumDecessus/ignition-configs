@@ -7,6 +7,7 @@ ignition:
       - local: ./ignition/mounts/3d_models.ign
       - local: ./ignition/mounts/camera.ign
       - local: ./ignition/mounts/digikam.ign
+      - local: ./ignition/mounts/lychee.ign
       - local: ./ignition/mounts/photos.ign
       - local: ./ignition/motd/apps.ign
       - local: ./ignition/mounts/docker/apps.ign
