@@ -9,6 +9,7 @@ ignition:
       - local: ./ignition/mounts/digikam.ign
       - local: ./ignition/mounts/lychee.ign
       - local: ./ignition/mounts/photos.ign
+      - local: ./ignition/mounts/piwigo.ign
       - local: ./ignition/motd/apps.ign
       - local: ./ignition/mounts/docker/apps.ign
 storage:

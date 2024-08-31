@@ -1,0 +1,16 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: var-opt-piwigo.mount
+      enabled: true
+      contents: | 
+        [Unit]
+        Requires=network-online.target
+        [Mount]
+        What=truenas.home.0n5.us:/mnt/tank1/piwigo
+        Where=/var/opt/piwigo
+        Type=nfs4
+        [Install]
+        RequiredBy=docker.service
+        WantedBy=multi-user.target
