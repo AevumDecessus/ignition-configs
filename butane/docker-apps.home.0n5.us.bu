@@ -6,7 +6,9 @@ ignition:
       - local: ./ignition/ucore/merge-ucore.ign
       - local: ./ignition/mounts/3d_models.ign
       - local: ./ignition/mounts/camera.ign
+      - local: ./ignition/mounts/camera_old.ign
       - local: ./ignition/mounts/digikam.ign
+      - local: ./ignition/mounts/digikam_old.ign
       - local: ./ignition/mounts/photos.ign
       - local: ./ignition/mounts/piwigo.ign
       - local: ./ignition/motd/apps.ign

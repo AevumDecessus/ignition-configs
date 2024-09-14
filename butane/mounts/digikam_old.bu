@@ -2,14 +2,14 @@ variant: fcos
 version: 1.5.0
 systemd:
   units:
-    - name: var-opt-camera.mount
+    - name: var-opt-digikam_old.mount
       enabled: true
       contents: | 
         [Unit]
         Requires=network-online.target
         [Mount]
-        What=truenas.home.0n5.us:/mnt/tank1/camera
-        Where=/var/opt/camera
+        What=truenas.home.0n5.us:/mnt/tank0/digikam
+        Where=/var/opt/digikam_old
         Type=nfs4
         [Install]
         RequiredBy=docker.service
