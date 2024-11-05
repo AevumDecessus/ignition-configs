@@ -1,0 +1,18 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "systemd": {
+    "units": [
+      {
+        "contents": "[Unit]\nRequires=network-online.target\nDescription=Prunes docker system\n[Service]\nType=oneshot\nExecStart=/usr/bin/docker system prune -af\n",
+        "name": "docker-system-prune.service"
+      },
+      {
+        "contents": "[Unit]\nDescription=Prunes docker system daily\n[Timer]\nOnBootSec=15min\nOnUnitActiveSec=24h\nUnit=docker-system-prune.service\n[Install]\nWantedBy=multi-user.target\n",
+        "enabled": true,
+        "name": "docker-system-prune.timer"
+      }
+    ]
+  }
+}

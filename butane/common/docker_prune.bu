@@ -1,0 +1,23 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: docker-system-prune.service
+      contents: | 
+        [Unit]
+        Requires=network-online.target
+        Description=Prunes docker system
+        [Service]
+        Type=oneshot
+        ExecStart=/usr/bin/docker system prune -af
+    - name: docker-system-prune.timer
+      enabled: true
+      contents: |
+        [Unit]
+        Description=Prunes docker system daily
+        [Timer]
+        OnBootSec=15min
+        OnUnitActiveSec=24h
+        Unit=docker-system-prune.service
+        [Install]
+        WantedBy=multi-user.target
