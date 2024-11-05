@@ -74,6 +74,9 @@ FILE=$1
 if [ ${FILE} == "all" ]; then {
   process_all
 }
+elif [ ${FILE} == "merge" ]; then {
+  do_merge
+}
 elif [ ${FILE} == "hosts" ]; then {
   do_hosts
 }
