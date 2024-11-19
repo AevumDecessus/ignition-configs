@@ -69,9 +69,9 @@ process_file() {
 }
 
 process_all() {
-  do_merge
   do_mounts
   do_docker_mounts
+  do_merge
   do_hosts
 }
 FILE=$1
