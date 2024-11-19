@@ -6,7 +6,7 @@ ignition:
       - local: ./ignition/common/common_groups.ign
       - local: ./ignition/common/files.ign
       - local: ./ignition/common/fixer_user.ign
-      - local: ./ignition/common/fixer_mount.ign
+      - local: ./ignition/mounts/fixer_mount.ign
       - local: ./ignition/common/docker_service.ign
       - local: ./ignition/common/docker_user.ign
       - local: ./ignition/common/docker_prune.ign

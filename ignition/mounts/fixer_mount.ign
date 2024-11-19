@@ -1,0 +1,14 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "systemd": {
+    "units": [
+      {
+        "contents": "[Unit]\nRequires=network.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/fastdata/fixer\nWhere=/var/opt/fixer\nType=nfs\n[Install]\nWantedBy=multi-user.target\n",
+        "enabled": true,
+        "name": "var-opt-fixer.mount"
+      }
+    ]
+  }
+}

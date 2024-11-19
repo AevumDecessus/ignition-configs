@@ -10,6 +10,6 @@ systemd:
         [Mount]
         What=truenas.home.0n5.us:/mnt/fastdata/fixer
         Where=/var/opt/fixer
-        Type=nfs4
+        Type=nfs
         [Install]
         WantedBy=multi-user.target
