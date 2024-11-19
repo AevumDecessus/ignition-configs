@@ -10,7 +10,7 @@ systemd:
         [Mount]
         What=truenas.home.0n5.us:/mnt/tank1/camera
         Where=/var/opt/camera
-        Type=nfs4
+        Type=nfs
         [Install]
         RequiredBy=docker.service
         WantedBy=multi-user.target

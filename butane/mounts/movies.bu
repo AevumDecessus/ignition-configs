@@ -10,7 +10,7 @@ systemd:
         [Mount]
         What=truenas.home.0n5.us:/mnt/tank0/movies
         Where=/var/opt/movies
-        Type=nfs4
+        Type=nfs
         [Install]
         RequiredBy=docker.service
         WantedBy=multi-user.target

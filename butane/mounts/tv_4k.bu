@@ -10,7 +10,7 @@ systemd:
         [Mount]
         What=truenas.home.0n5.us:/mnt/tank1/tv_4k
         Where=/var/opt/tv_4k
-        Type=nfs4
+        Type=nfs
         [Install]
         RequiredBy=docker.service
         WantedBy=multi-user.target
