@@ -54,6 +54,10 @@ do_docker_mounts() {
 }
 process_file() {
   find_end
+  if [ ! -f "butane/${END}.bu" ]; then
+    echo "butane/${END}.bu does not exist"
+    exit 1
+  fi
   $(docker run --rm --interactive         \
      --security-opt label=disable          \
      --volume "${PWD}":/config             \
