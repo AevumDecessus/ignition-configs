@@ -11,7 +11,7 @@ storage:
     - path: /etc/hostname
       mode: 0644
       contents:
-        inline: docker-db.home.0n5.us
+        inline: docker-social.home.0n5.us
     - path: /etc/NetworkManager/system-connections/ens18.nmconnection
       overwrite: false
       append:
