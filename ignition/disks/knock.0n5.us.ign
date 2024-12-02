@@ -20,7 +20,8 @@
         "device": "/dev/disk/by-partlabel/home",
         "format": "xfs",
         "label": "home",
-        "path": "/var/home"
+        "path": "/var/home",
+        "wipeFilesystem": true
       }
     ]
   },

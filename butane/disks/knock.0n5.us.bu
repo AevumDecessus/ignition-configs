@@ -12,4 +12,5 @@ storage:
       device: /dev/disk/by-partlabel/home
       format: xfs
       label: home
+      wipe_filesystem: true
       with_mount_unit: true
