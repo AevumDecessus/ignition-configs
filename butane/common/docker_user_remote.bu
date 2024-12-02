@@ -14,8 +14,7 @@ passwd:
          - camera
          - secure
        shell: /bin/bash
-       home_dir: /home/docker
-       no_create_home: true
+       home_dir: /var/home/docker
 systemd:
   units:
     - name: docker.service
