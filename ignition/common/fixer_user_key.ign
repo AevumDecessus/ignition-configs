@@ -1,0 +1,27 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "groups": [
+          "wheel",
+          "sudo"
+        ],
+        "homeDir": "/var/opt/fixer",
+        "name": "fixer",
+        "noCreateHome": true,
+        "noUserGroup": true,
+        "passwordHash": "$6$9g9XjICLGkbiIFcR$lI8UBhWs7wxhEohYj1BbxrEy.X6yoXuJWADbsfWOo.0X2NljahUHjyBv9MkagHsx9hXjWBUej7hYu0E2P/9zB0",
+        "primaryGroup": "fixer",
+        "sshAuthorizedKeys": [
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMZrp+JQAmI/gBUsafEWMmg2yB65xWmiM9U9wSaPpn4L",
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKguioxb528BXrSrJ/3v4eSBX2zi1ukPzadIuIvKQhZ5"
+        ],
+        "shell": "/bin/bash",
+        "uid": 7654
+      }
+    ]
+  }
+}
