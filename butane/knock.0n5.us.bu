@@ -1,0 +1,13 @@
+variant: fcos
+version: 1.5.0
+ignition:
+  config:
+    merge:
+      - local: ./ignition/ucore/merge-ucore.ign
+      - local: ./ignition/motd/knock.0n5.us.ign
+storage:
+  files:
+    - path: /etc/hostname
+      mode: 0644
+      contents:
+        inline: knock.0n5.us
