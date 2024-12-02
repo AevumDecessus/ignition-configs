@@ -5,7 +5,7 @@
   "storage": {
     "disks": [
       {
-        "device": "/dev/disk/by-id/nvme-SAMSUNG_MZVL2512HCJQ-00B07_S63CNL0W522204-part1",
+        "device": "/dev/disk/by-id/nvme-SAMSUNG_MZVL2512HCJQ-00B07_S63CNL0W522204",
         "partitions": [
           {
             "label": "home",
