@@ -9,8 +9,7 @@
         "partitions": [
           {
             "label": "home",
-            "sizeMiB": 0,
-            "startMiB": 0
+            "number": 1
           }
         ],
         "wipeTable": false
@@ -20,6 +19,7 @@
       {
         "device": "/dev/disk/by-partlabel/home",
         "format": "xfs",
+        "label": "home",
         "path": "/var/home"
       }
     ]

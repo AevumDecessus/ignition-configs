@@ -5,11 +5,11 @@ storage:
   - device: /dev/disk/by-id/nvme-SAMSUNG_MZVL2512HCJQ-00B07_S63CNL0W522204
     wipe_table: false
     partitions:
-    - size_mib: 0
-      start_mib: 0
-      label: home
+    - label: home
+      number: 1
   filesystems:
     - path: /var/home
       device: /dev/disk/by-partlabel/home
       format: xfs
+      label: home
       with_mount_unit: true
