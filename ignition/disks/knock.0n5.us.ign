@@ -21,7 +21,7 @@
         "format": "xfs",
         "label": "home",
         "path": "/var/home",
-        "wipeFilesystem": true
+        "wipeFilesystem": false
       }
     ]
   },
