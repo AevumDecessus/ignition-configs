@@ -1,0 +1,22 @@
+variant: fcos
+version: 1.5.0
+passwd:
+   users:
+     - name: docker_user
+       primary_group: docker_user
+       no_user_group: true
+       uid: 3001
+       groups:
+         - docker
+         - video_media
+         - misc
+         - calibre
+         - camera
+         - secure
+       shell: /bin/bash
+       home_dir: /home/docker
+       no_create_home: true
+systemd:
+  units:
+    - name: docker.service
+      enabled: true

@@ -7,5 +7,5 @@ ignition:
       - local: ./ignition/common/files.ign
       - local: ./ignition/common/fixer_user_key.ign
       - local: ./ignition/common/docker_service.ign
-      - local: ./ignition/common/docker_user.ign
+      - local: ./ignition/common/docker_user_home.ign
       - local: ./ignition/common/docker_prune.ign

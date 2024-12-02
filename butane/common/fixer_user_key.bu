@@ -3,7 +3,7 @@ version: 1.5.0
 passwd:
    users:
      - name: fixer
-       home_dir: /var/opt/fixer
+       home_dir: /home/fixer
        no_create_home: true
        primary_group: fixer
        no_user_group: true
