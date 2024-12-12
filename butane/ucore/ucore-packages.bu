@@ -17,7 +17,7 @@ systemd:
         Type=oneshot
         StandardOutput=journal+console
         ExecStart=/usr/bin/touch /etc/ucore-autorebase/ucore-packages
-        ExecStart=/usr/bin/rpm-ostree install -y --allow-inactive vim
+        ExecStart=/usr/bin/rpm-ostree install -y --allow-inactive vim atop
         ExecStart=/usr/bin/systemctl reboot
         [Install]
         WantedBy=multi-user.target
