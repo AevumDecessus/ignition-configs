@@ -1,0 +1,17 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "storage": {
+    "files": [
+      {
+        "overwrite": true,
+        "path": "/etc/modules-load.d/zfs.conf",
+        "contents": {
+          "compression": "",
+          "source": "data:,zfs%0A"
+        }
+      }
+    ]
+  }
+}
