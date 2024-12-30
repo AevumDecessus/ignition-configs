@@ -29,5 +29,5 @@ storage:
       overwrite: false
       append:
         - inline: |
-            address1=192.168.202.43/23,192.168.202.1
+            address1=192.168.202.36/23,192.168.202.1
             dhcp-hostname=plex.home.0n5.us
