@@ -3,7 +3,7 @@ version: 1.5.0
 ignition:
   config:
     merge:
-      - local: ./ignition/nvidia/merge-nvidia.ign
+      - local: ./ignition/nvidia/merge-nvidia-zfs.ign
       - local: ./ignition/mounts/anime.ign
       - local: ./ignition/mounts/anime_movies.ign
       - local: ./ignition/mounts/cartoons.ign
