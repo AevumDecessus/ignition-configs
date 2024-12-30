@@ -25,7 +25,7 @@ storage:
       mode: 0644
       contents:
         inline: plex.home.0n5.us
-    - path: /etc/NetworkManager/system-connections/ens18.nmconnection
+    - path: /etc/NetworkManager/system-connections/enp1s0f0.nmconnection
       overwrite: false
       append:
         - inline: |
