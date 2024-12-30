@@ -30,9 +30,9 @@ storage:
       contents:
         inline: |
           [connection]
-          id=ens18
+          id=enp1s0f0
           type=ethernet
-          interface-name=ens18
+          interface-name=enp1s0f0
           [ipv4]
           dns=192.168.202.31;
           dns-search=home.0n5.us
