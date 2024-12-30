@@ -85,7 +85,8 @@
         "contents": {
           "compression": "gzip",
           "source": "data:;base64,H4sIAAAAAAAC/1TOwWrGIBAE4Ps+S7XRtCGl+CQhh0U3KOgqrinN25f+/If8149hZjZfmcmPVHmHFByxmBXG1cjRiNSZBiQe1A/0pBgLPSNbaj8fOwQWZ76sNsuq7WT1bL7/TQlh99HFWkhP/KlPgYKXOjBld2AWgkIj1uAK8okZMIROIua1bHm389tdDITom4pVxuNLy/Sr7yN/AQAA//8x3/da0AAAAA=="
-        }
+        },
+        "mode": 384
       }
     ]
   }
