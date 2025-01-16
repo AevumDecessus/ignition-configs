@@ -6,6 +6,8 @@ ignition:
       - local: ./ignition/nvidia/merge-nvidia-zfs.ign
       - local: ./ignition/mounts/anime.ign
       - local: ./ignition/mounts/anime_movies.ign
+      - local: ./ignition/mounts/audiobooks.ign
+      - local: ./ignition/mounts/audiobooks_unsorted.ign
       - local: ./ignition/mounts/cartoons.ign
       - local: ./ignition/mounts/documentary_films.ign
       - local: ./ignition/mounts/documentary_series.ign
@@ -18,6 +20,7 @@ ignition:
       - local: ./ignition/mounts/tv.ign
       - local: ./ignition/mounts/tv_4k.ign
       - local: ./ignition/mounts/docker/plex.ign
+      - local: ./ignition/mounts/docker/books.ign
       - local: ./ignition/mounts/zfs/fastdata-zpool.ign
       - local: ./ignition/motd/plex.ign
 storage:
