@@ -68,10 +68,6 @@
         },
         {
           "compression": "gzip",
-          "source": "data:;base64,H4sIAAAAAAAC/0yQMW+zMBCGd36F5TmxI31fl0gs3Tp0qVplgAwXuCQW+Ex9ZypU8d8rE1Q6obvnQX7f+y6U0u5GTlwgfVR5VkqPGPmx0P/Mf3PQhVLzLrs8saBvNzWRE9ZHVS2jWtcLagIJ0kJ19UFOzjW94WdyEbkklK8QOyMQbyg1Va8hUTZOd5BSYkICNvfg0RzoySQ+Wk9ir8DSgoBtQ9NhtJcQOs4/YcTSjhBtGGSFNb1PA5Z05ZqqF2KBvt8itM9T+fAMYxxdgzWdgGQBPvXi9okx/gbUu60ZElx6zFfIQf8AAo+57ghxHwbZrw/43E2v2rx8z/mkxVz8BAAA//9OknMtggEAAA=="
-        },
-        {
-          "compression": "gzip",
           "source": "data:;base64,H4sIAAAAAAAC/5RTPY/TQBDt8yuWbTnHSFBFcsHHFVeBFBBFnGKyniTDOTPWzGy4gPLfke1AAOUKV9bO27d+7+3bn7MQIu2YnITjIvTrEOIR1cZBfD1/M38VZyGc7/q9djLHQ3Pdmpnc4iKshmW4jAcoCTvygMbVFyZf1/wBLSl1/e+qh0Mn6mEL5g04hB+dSBtg66ihg/QIOwzE5tC20BNqfi/cDFI/ge/vn8jcqhI9lTmJYgHZRXEDhmXmIyptCZspLKMdT2SgHimhFQ0ZbNpp5HFwsWq3mS9uU2nIrvidXTFkV/PbPryK0b+LPhbCLTHOHXSHXvNXYLfnwNVydLKu+fOpw0oYbS9e89KBG9DmY/Yue/VNsjK0L5OwSYs13z9hWjqoV2U2LTfEpUtO+zBJ+H+nWH/M2Af6tyU1rx7GTqxHR9i8O1WH3DoV2VD/GIp31yYiD3cTF8E1418AwwH7eo4yb2qbX644Xljn4bvuX8TsPPsVAAD//6YPSQRBAwAA"
         },
         {
