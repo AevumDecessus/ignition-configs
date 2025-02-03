@@ -19,7 +19,7 @@ ignition:
       - local: ./ignition/mounts/plex_meta.ign
       - local: ./ignition/mounts/tv.ign
       - local: ./ignition/mounts/tv_4k.ign
-      - local: ./ignition/mounts/zfs/fastdata-zpool.ign
+      - local: ./ignition/mounts/zfs/plexdata-zpool.ign
       - local: ./ignition/motd/plex.ign
 storage:
   files:
