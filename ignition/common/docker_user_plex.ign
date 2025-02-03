@@ -13,7 +13,7 @@
           "camera",
           "secure"
         ],
-        "homeDir": "/var/opt/fastdata",
+        "homeDir": "/var/opt/plexdata",
         "name": "docker_user",
         "noCreateHome": true,
         "noUserGroup": true,

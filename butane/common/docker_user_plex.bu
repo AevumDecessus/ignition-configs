@@ -14,7 +14,7 @@ passwd:
          - camera
          - secure
        shell: /bin/bash
-       home_dir: /var/opt/fastdata
+       home_dir: /var/opt/plexdata
        no_create_home: true
 systemd:
   units:
