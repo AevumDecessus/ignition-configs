@@ -29,6 +29,7 @@ storage:
         inline: docker-plex.home.0n5.us
     - path: /etc/NetworkManager/system-connections/ens18.nmconnection
       overwrite: false
+      mode: 0600
       contents:
         inline: |
           [connection]
