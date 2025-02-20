@@ -8,7 +8,7 @@
         },
         {
           "compression": "gzip",
-          "source": "data:;base64,H4sIAAAAAAAC/9SRwUoEMQyG732K0vNuM6x7mpvgW4hI7WQ6gWm7NOl6kHl3aR13RfABPJX8+Zs/H/lQWhsKiYRyMqNutdbmioW/BPNgz3YwSuvt0LwsubiAd+tMK7IZ9XMv9S731sXJ0kYAioeYZbITDMNxprCiWJ/TbA53t89JMAnfRu8651p8CzSLyIVHgOLebSBZ6ltlLPs/63OER7zW+IQemSvDN9exRVFgiI5SXwRWdNPJ3GK2H3vEPLW082lQv5p/oRFzxc72urN15X/A9fel3Vdt6jMAAP//LZaYjg8CAAA="
+          "source": "data:;base64,H4sIAAAAAAAC/9SRwUoEMQyG732K0vNuM+h6mZvgW4hI7WQ6gWm7NOl6kHl3aR13RfABPJX8+Zs/H/lQWhsKiYRyMqNutdbmgoW/BHNvT3YwSuvt0LwsubiAN+tMK7IZ9XMv9S731tnJ0kYAioeYZbITDMNxprCiWJ/TbA43t89JMAlfR+8651p8CzSLyJlHgOLebSBZ6ltlLPs/63OER7zU+IQemSvDN9exRVFgiI5SXwRWdNODucZsP/aIeWppp7tB/Wr+hUbMFTvb687Wlf8B19+Xdl+1qc8AAAD//+89oXsPAgAA"
         }
       ]
     },
@@ -20,7 +20,7 @@
         "path": "/etc/hostname",
         "contents": {
           "compression": "",
-          "source": "data:,docker-lead2.home.0n5.us"
+          "source": "data:,docker-lead5.home.0n5.us"
         },
         "mode": 420
       },
@@ -30,7 +30,7 @@
         "append": [
           {
             "compression": "",
-            "source": "data:,address1%3D192.168.202.48%2F23%2C192.168.202.1%0Adhcp-hostname%3Ddocker-lead2.home.0n5.us%0A"
+            "source": "data:,address1%3D192.168.202.55%2F23%2C192.168.202.1%0Adhcp-hostname%3Ddocker-lead5.home.0n5.us%0A"
           }
         ]
       }

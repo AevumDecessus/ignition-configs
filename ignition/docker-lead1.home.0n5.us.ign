@@ -8,10 +8,6 @@
         },
         {
           "compression": "gzip",
-          "source": "data:;base64,H4sIAAAAAAAC/0yQMW+0MAyGd35FlPlITvq+Lkgs3Tp0qVp1gBtc8N1FRxwaO1So4r9X4VDpFNnPk8SvvwultLuQExdIVyrXSukJI98b+p/5b466UGo5ZJdnFvT9riZywrpSzVqqrb2iLpAgrVQ3b+Tk1NILfiYXkWtC+QrxZgTiBaWl5jkkysb7FaSWmJCAzTV4NEd6MIkr60nsGVh6ELB96G4YLTs/DphvYcTaThBtGGWjLb3OI9Z05paaJ2KBYdhn6B/n+u4Zxji5Lj8DJCvwaRBXJsb4O6E+7NGQ4GPAvIY86R9A4DHnnSCWYZRy+8DncHrTlvU85Z0WS/ETAAD//xcgNjGDAQAA"
-        },
-        {
-          "compression": "gzip",
           "source": "data:;base64,H4sIAAAAAAAC/9SRwU4EIQyG7zwF4bxLR93T3Ex8C2MMMh2myQAbWtaDmXc34LhrTHwAT6R/f/r3Sz+U1oZCIqGczKhbrbW5YOEvwTzYkx2M0no7NC9LLi7gzTrTimxG/dxLvcu9dXaytBGA4iFmmewEw3CcKawo1uc0m8PN7XMSTMLX0bvOuRbfAs0icuYRoLh3G0iW+lYZy/7P+hzhES81PqFH5srwzXVsURQYoqPUF4EV3XRnrjHbjz1inlra6X5Qv5p/oRFzxc72urN15X/A9fel3Vdt6jMAAP//GtywKA8CAAA="
         }
       ]
@@ -34,7 +30,7 @@
         "append": [
           {
             "compression": "",
-            "source": "data:,address1%3D192.168.202.47%2F23%2C192.168.202.1%0Adhcp-hostname%3Ddocker-lead2.home.0n5.us%0A"
+            "source": "data:,address1%3D192.168.202.47%2F23%2C192.168.202.1%0Adhcp-hostname%3Ddocker-lead1.home.0n5.us%0A"
           }
         ]
       }

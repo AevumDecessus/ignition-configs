@@ -4,16 +4,16 @@ ignition:
   config:
     merge:
       - local: ./ignition/ucore/merge-ucore.ign
-      - local: ./ignition/motd/lead2.ign
+      - local: ./ignition/motd/lead5.ign
 storage:
   files:
     - path: /etc/hostname
       mode: 0644
       contents:
-        inline: docker-lead2.home.0n5.us
+        inline: docker-lead5.home.0n5.us
     - path: /etc/NetworkManager/system-connections/ens18.nmconnection
       overwrite: false
       append:
         - inline: |
-            address1=192.168.202.48/23,192.168.202.1
-            dhcp-hostname=docker-lead2.home.0n5.us
+            address1=192.168.202.55/23,192.168.202.1
+            dhcp-hostname=docker-lead5.home.0n5.us

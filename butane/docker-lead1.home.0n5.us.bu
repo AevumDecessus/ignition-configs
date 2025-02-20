@@ -4,7 +4,6 @@ ignition:
   config:
     merge:
       - local: ./ignition/ucore/merge-ucore.ign
-      - local: ./ignition/mounts/docker/simple.ign
       - local: ./ignition/motd/lead1.ign
 storage:
   files:
@@ -17,4 +16,4 @@ storage:
       append:
         - inline: |
             address1=192.168.202.47/23,192.168.202.1
-            dhcp-hostname=docker-lead2.home.0n5.us
+            dhcp-hostname=docker-lead1.home.0n5.us
