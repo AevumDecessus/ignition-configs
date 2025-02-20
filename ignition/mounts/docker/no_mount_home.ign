@@ -1,0 +1,19 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "storage": {
+    "directories": [
+      {
+        "group": {
+          "id": 3001
+        },
+        "path": "/var/opt/docker",
+        "user": {
+          "id": 3001
+        },
+        "mode": 448
+      }
+    ]
+  }
+}

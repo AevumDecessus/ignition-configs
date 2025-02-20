@@ -1,0 +1,10 @@
+variant: fcos
+version: 1.5.0
+storage:
+  directories:
+    - path: /var/opt/docker
+      mode: 0700
+      user:
+        id: 3001
+      group:
+        id: 3001
