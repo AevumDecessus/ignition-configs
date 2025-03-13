@@ -3,7 +3,7 @@ version: 1.5.0
 ignition:
   config:
     merge:
-      - local: ./ignition/ucore/merge-ucore.ign
+      - local: ./ignition/ucore/merge-ucore-physical-zfs.ign
       - local: ./ignition/mounts/anime.ign
       - local: ./ignition/mounts/anime_movies.ign
       - local: ./ignition/mounts/audiobooks.ign

@@ -1,0 +1,10 @@
+variant: fcos
+version: 1.5.0
+ignition:
+  config:
+    merge:
+      - local: ./ignition/common/merge_physical.ign
+      - local: ./ignition/ucore/nfs-home-sebool.ign
+      - local: ./ignition/ucore/ucore-zfs-autorebase.ign
+      - local: ./ignition/ucore/ucore-packages.ign
+      - local: ./ignition/ucore/ucore-disable-services.ign
