@@ -91,12 +91,11 @@
       {
         "overwrite": false,
         "path": "/etc/NetworkManager/system-connections/ens18.nmconnection",
-        "append": [
-          {
-            "compression": "",
-            "source": "data:,address1%3D192.168.202.44%2F23%2C192.168.202.1%0Adhcp-hostname%3Ddocker-downloads.home.0n5.us%0A"
-          }
-        ]
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/1TOwU4DMQwE0Lu/hYQmXVA55EuqHqzYq0Qk9irOgvbvEYjD9vo0mpl7VhHOs6o8oFJisXCDeWyceBYewhOqTB4rZnaCnf8j97p9LQ8gsRQ+og/vNx8v0V/DLzljHLmkop39Rd78btDxcCvWllZsxtB5FqXUUXZsgESDzcJT17K8xuvLWQJQyZsravPvCmn+5OFIv6Upkvnz4E8AAAD//5yCKvXbAAAA"
+        },
+        "mode": 384
       }
     ]
   }
