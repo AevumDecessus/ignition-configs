@@ -19,6 +19,7 @@ ignition:
       - local: ./ignition/mounts/tv.ign
       - local: ./ignition/mounts/tv_4k.ign
       - local: ./ignition/mounts/docker/downloads.ign
+      - local: ./ignition/mounts/zfs/downloadsdata-zpool.ign
       - local: ./ignition/motd/downloads.ign
 storage:
   files:

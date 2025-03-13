@@ -1,0 +1,23 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: ucore-import-downloadsdata-zpool.service
+      enabled: true
+      contents: |
+        [Unit]
+        Description=Import downloadsdata zpool after package installation
+        ConditionPathExists=/etc/ucore-autorebase/unverified
+        ConditionPathExists=/etc/ucore-autorebase/signed
+        ConditionPathExists=/etc/ucore-autorebase/services-disabled
+        ConditionPathExists=/etc/ucore-autorebase/ucore-packages
+        ConditionPathExists=!/etc/ucore-autorebase/import-downloadsdata-zpool
+        After=network-online.target
+        Wants=network-online.target
+        [Service]
+        Type=oneshot
+        StandardOutput=journal+console
+        ExecStart=/usr/bin/touch /etc/ucore-autorebase/import-downloadsdata-zpool
+        ExecStart=/usr/sbin/zpool import downloadsdata
+        [Install]
+        WantedBy=multi-user.target
