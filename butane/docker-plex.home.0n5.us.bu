@@ -20,6 +20,7 @@ ignition:
       - local: ./ignition/mounts/tv.ign
       - local: ./ignition/mounts/tv_4k.ign
       - local: ./ignition/mounts/zfs/plexdata-zpool.ign
+      - local: ./ignition/common/docker_user_plex.ign
       - local: ./ignition/motd/plex.ign
 storage:
   files:

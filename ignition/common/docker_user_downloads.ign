@@ -1,0 +1,34 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "groups": [
+          "docker",
+          "video_media",
+          "misc",
+          "calibre",
+          "camera",
+          "secure"
+        ],
+        "homeDir": "/var/opt/downloadsdata",
+        "name": "docker_user",
+        "noCreateHome": true,
+        "noUserGroup": true,
+        "primaryGroup": "docker_user",
+        "shell": "/bin/bash",
+        "uid": 3001
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "enabled": true,
+        "name": "docker.service"
+      }
+    ]
+  }
+}
