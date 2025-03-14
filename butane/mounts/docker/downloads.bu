@@ -2,14 +2,14 @@ variant: fcos
 version: 1.5.0
 systemd:
   units:
-    - name: var-opt-docker.mount
+    - name: var-opt-downloads.mount
       enabled: true
       contents: |
         [Unit]
         Requires=network.target
         [Mount]
         What=truenas.home.0n5.us:/mnt/fastdata/docker/downloads
-        Where=/var/opt/docker
+        Where=/var/opt/downloads
         Type=nfs
         [Install]
         RequiredBy=docker.service

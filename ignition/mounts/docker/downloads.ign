@@ -5,9 +5,9 @@
   "systemd": {
     "units": [
       {
-        "contents": "[Unit]\nRequires=network.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/fastdata/docker/downloads\nWhere=/var/opt/docker\nType=nfs\n[Install]\nRequiredBy=docker.service\nWantedBy=multi-user.target\n",
+        "contents": "[Unit]\nRequires=network.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/fastdata/docker/downloads\nWhere=/var/opt/downloads\nType=nfs\n[Install]\nRequiredBy=docker.service\nWantedBy=multi-user.target\n",
         "enabled": true,
-        "name": "var-opt-docker.mount"
+        "name": "var-opt-downloads.mount"
       }
     ]
   }
