@@ -22,6 +22,7 @@ ignition:
       - local: ./ignition/mounts/zfs/plexdata-zpool.ign
       - local: ./ignition/common/docker_user_plex.ign
       - local: ./ignition/mounts/docker/plex.ign
+      - local: ./ignition/mounts/docker/books.ign
       - local: ./ignition/motd/plex.ign
 storage:
   files:
