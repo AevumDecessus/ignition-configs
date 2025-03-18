@@ -1,0 +1,17 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "storage": {
+    "files": [
+      {
+        "overwrite": true,
+        "path": "/etc/sudoers.d/docker_user_zfs_snapshot",
+        "contents": {
+          "compression": "",
+          "source": "data:,docker_user%20ALL%20%3D%20(root)%20%20NOPASSWD%3A%20%2Fusr%2Fsbin%2Fzfs%20snapshot%0A"
+        }
+      }
+    ]
+  }
+}

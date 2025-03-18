@@ -3,13 +3,15 @@ version: 1.5.0
 ignition:
   config:
     merge:
-      - local: ./ignition/ucore/merge-ucore.ign
+      - local: ./ignition/ucore/merge-ucore-physical-zfs.ign
       - local: ./ignition/mounts/audiobooks.ign
       - local: ./ignition/mounts/audiobooks_unsorted.ign
       - local: ./ignition/mounts/calibre.ign
       - local: ./ignition/mounts/downloads.ign
       - local: ./ignition/mounts/docker/books.ign
       - local: ./ignition/motd/books.ign
+      - local: ./ignition/mounts/zfs/booksdata-zpool.ign
+      - local: ./ignition/common/docker_user_books.ign
 storage:
   files:
     - path: /etc/hostname
@@ -18,7 +20,17 @@ storage:
         inline: docker-books.home.0n5.us
     - path: /etc/NetworkManager/system-connections/ens18.nmconnection
       overwrite: false
-      append:
-        - inline: |
-            address1=192.168.202.46/23,192.168.202.1
-            dhcp-hostname=docker-books.home.0n5.us
+      mode: 0600
+      contents:
+        inline: |
+          [connection]
+          id=ens18
+          type=ethernet
+          interface-name=ens18
+          [ipv4]
+          dns=192.168.202.31
+          dns-search=home.0n5.us
+          may-fail=false
+          method=manual
+          address1=192.168.202.46/23,192.168.202.1
+          dhcp-hostname=docker-books.home.0n5.us

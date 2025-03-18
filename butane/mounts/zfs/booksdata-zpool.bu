@@ -1,0 +1,23 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: ucore-import-booksdata-zpool.service
+      enabled: true
+      contents: |
+        [Unit]
+        Description=Import booksdata zpool after package installation
+        ConditionPathExists=/etc/ucore-autorebase/unverified
+        ConditionPathExists=/etc/ucore-autorebase/signed
+        ConditionPathExists=/etc/ucore-autorebase/services-disabled
+        ConditionPathExists=/etc/ucore-autorebase/ucore-packages
+        ConditionPathExists=!/etc/ucore-autorebase/import-booksdata-zpool
+        After=network-online.target
+        Wants=network-online.target
+        [Service]
+        Type=oneshot
+        StandardOutput=journal+console
+        ExecStart=/usr/bin/touch /etc/ucore-autorebase/import-booksdata-zpool
+        ExecStart=/usr/sbin/zpool import booksdata
+        [Install]
+        WantedBy=multi-user.target

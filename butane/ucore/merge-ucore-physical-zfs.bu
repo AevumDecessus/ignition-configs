@@ -8,3 +8,5 @@ ignition:
       - local: ./ignition/ucore/ucore-zfs-autorebase.ign
       - local: ./ignition/ucore/ucore-packages.ign
       - local: ./ignition/ucore/ucore-disable-services.ign
+      - local: ./ignition/common/sudo/custom.ign
+      - local: ./ignition/common/sudo/docker_zfs_snapshot.ign

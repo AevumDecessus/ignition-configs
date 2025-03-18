@@ -11,3 +11,5 @@ ignition:
       - local: ./ignition/nvidia/docker-daemon-nvidia.ign
       - local: ./ignition/nvidia/nvidia-sebool.ign
       - local: ./ignition/ucore/nfs-home-sebool.ign
+      - local: ./ignition/common/sudo/custom.ign
+      - local: ./ignition/common/sudo/docker_zfs_snapshot.ign
