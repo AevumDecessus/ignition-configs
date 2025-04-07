@@ -13,6 +13,7 @@ passwd:
          - calibre
          - camera
          - secure
+         - audiobooks
        shell: /bin/bash
        home_dir: /var/opt/booksdata
        no_create_home: true

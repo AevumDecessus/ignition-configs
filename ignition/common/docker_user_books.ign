@@ -11,7 +11,8 @@
           "misc",
           "calibre",
           "camera",
-          "secure"
+          "secure",
+          "audiobooks"
         ],
         "homeDir": "/var/opt/booksdata",
         "name": "docker_user",
