@@ -37,6 +37,10 @@
         "name": "db"
       },
       {
+        "gid": 2009,
+        "name": "audiobooks"
+      },
+      {
         "gid": 7654,
         "name": "fixer"
       },

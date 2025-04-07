@@ -18,6 +18,8 @@ passwd:
       gid: 2007
     - name: db
       gid:  2008
+    - name: audiobooks
+      gid: 2009
     - name: fixer
       gid: 7654
     - name: docker_user
