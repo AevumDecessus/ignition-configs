@@ -1,0 +1,20 @@
+variant: fcos
+version: 1.5.0
+ignition:
+  config:
+    merge:
+      - local: ./ignition/ucore/merge-ucore.ign
+      - local: ./ignition/motd/home.ign
+      - local: ./ignition/mounts/docker/home.ign
+storage:
+  files:
+    - path: /etc/hostname
+      mode: 0644
+      contents:
+        inline: docker-home.home.0n5.us
+    - path: /etc/NetworkManager/system-connections/ens18.nmconnection
+      overwrite: false
+      append:
+        - inline: |
+            address1=192.168.202.52/23,192.168.202.1
+            dhcp-hostname=docker-home.home.0n5.us
