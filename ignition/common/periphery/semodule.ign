@@ -1,0 +1,42 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/opt/periphery/modules/base_container.cil",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/4yR0W6uIBCE732KvcSnIohzTonIkmX9rW/fgGiT9k/j1UYzM98Oa6bIfiHPSV1IkMHokUFZ2KOUsX8W9gt0HIxwxPnnKIrVyg+lU5UwbYoCpZlXFxKZLqHxnegm20fy8gqitrg0T/z5zLL6Yj2nolI5s237/235FyK67qzeZC5G3q/C/U1Oga0GMl7gFMQZif5DaySVPgVupl2CggTJraAY0kJbaiOw10jtFC5npHn8DayzL3XiLkTj1fw3Jp83y5UBq0983+eQLWlYq+3KMguOu2Rbu5UqcOI/7qKvgP0sWmPH4SsAAP//QEieAGICAAA="
+        },
+        "mode": 420
+      },
+      {
+        "path": "/opt/periphery/modules/net_container.cil",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/7yUUW7DIAyG33MKP5JTIWLcFpXYCNx1u/1klmbtpq7ppC0vDo7/Xx82wU1Z8AhM6lFYQ2KqAyyPk6JJOOTb7/6SXgtXgb4VCqo1TSelRgotcJzk1ZtBlDkkBleqILU2jqt+HMZhWFAqNa0JlaJ/RHWv9AfAkLOcYSFYo1MsvgkeScElQTXvEGFParuBDnauSQnakgqlEEeYEkdAYSZUK5eiVtLD4aRRzgxYKShBTk2JISBS0fFq94/gTvHP4Z7Baaj/wrMFyCu4zEe/S5nAGcYWJUskU1r8mH0lfIF+CIzTVrsqM9hKZUNzbh1tYN3xYvQrh47ySbDV4Pq09Jx1/QmA61/hRv/I4KBafJGq31zCTH4Z+waQuz7WTT+3fW+KvYxfrpD3AAAA///FOiKNzQQAAA=="
+        },
+        "mode": 420
+      },
+      {
+        "path": "/opt/periphery/modules/periphery.cil",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/8SU346yMBDF732KuZSnamp7/GyEaTMdNd/bb4pWhTUbXVi44l97fmf4Bba7NrojJUhIB8j/DRHR9WbgAyQouchqA0OaFw8FWSU4hTcMNeO1tm3jhZJEh5zpxIIMOcObFEWN0pbUJZOjO6JcENsOZhfYU9O8jLgDzD606BN8ENqS9d6U3eQEVkH/oFZVKESnLfVDxgQmgfUk6OIZ1/XSlYAMK+5A+bbrIkHxQYdyUkqkBPY/VOhsGtToG1ToidvAx1+w99HcClRkH38NunUav4f384sdMxywYh6jvFn6bMXIidf29lxjBXVD/J/Ye0ZMFwh1JU1Dt9InNy6wmLTv4Bl1jcOni+J9XkdQBS8m5gGcUUgNnS6iHNcxcScvpuKJOKOLe+p0GeVnuIqLCl5MxQM4o4ka+qGIZvMVAAD//3q4aVNdCgAA"
+        },
+        "mode": 420
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "contents": "[Unit]\nDescription=Installs periphery semodule\nConditionPathExists=!/etc/periphery/semodule\n[Service]\nType=oneshot\nExecStart=/usr/sbin/semodule -i /opt/periphery/modules/*.cil\nExecStart=/usr/bin/touch /etc/periphery/semodule\n[Install]\nWantedBy=multi-user.target\n",
+        "enabled": true,
+        "name": "periphery-semodule.service"
+      }
+    ]
+  }
+}

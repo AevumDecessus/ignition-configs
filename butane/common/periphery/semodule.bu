@@ -1,0 +1,20 @@
+variant: fcos
+version: 1.5.0
+storage:
+  trees:
+    - local: butane/common/periphery/modules
+      path: /opt/periphery/modules
+systemd:
+  units:
+    - name: periphery-semodule.service
+      enabled: true
+      contents: |
+        [Unit]
+        Description=Installs periphery semodule
+        ConditionPathExists=!/etc/periphery/semodule
+        [Service]
+        Type=oneshot
+        ExecStart=/usr/sbin/semodule -i /opt/periphery/modules/*.cil
+        ExecStart=/usr/bin/touch /etc/periphery/semodule
+        [Install]
+        WantedBy=multi-user.target
