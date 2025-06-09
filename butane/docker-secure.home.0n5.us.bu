@@ -6,6 +6,7 @@ ignition:
       - local: ./ignition/ucore/merge-ucore.ign
       - local: ./ignition/mounts/docker/secure.ign
       - local: ./ignition/motd/secure.ign
+      - local: ./ignition/common/periphery/semodule.ign
 storage:
   files:
     - path: /etc/hostname
