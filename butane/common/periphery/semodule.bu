@@ -11,12 +11,12 @@ systemd:
       contents: |
         [Unit]
         Description=Installs periphery semodule
-        ConditionPathExists=!/etc/periphery/semodule
+        ConditionPathExists=!/opt/periphery/semodule
         [Service]
         Type=oneshot
         ExecStart=/usr/sbin/semodule -i /opt/periphery/modules/base_container.cil
         ExecStart=/usr/sbin/semodule -i /opt/periphery/modules/net_container.cil
         ExecStart=/usr/sbin/semodule -i /opt/periphery/modules/periphery.cil
-        ExecStart=/usr/bin/touch /etc/periphery/semodule
+        ExecStart=/usr/bin/touch /opt/periphery/semodule
         [Install]
         WantedBy=multi-user.target
