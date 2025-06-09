@@ -33,7 +33,7 @@
   "systemd": {
     "units": [
       {
-        "contents": "[Unit]\nDescription=Installs periphery semodule\nConditionPathExists=!/etc/periphery/semodule\n[Service]\nType=oneshot\nExecStart=/usr/sbin/semodule -i /opt/periphery/modules/*.cil\nExecStart=/usr/bin/touch /etc/periphery/semodule\n[Install]\nWantedBy=multi-user.target\n",
+        "contents": "[Unit]\nDescription=Installs periphery semodule\nConditionPathExists=!/etc/periphery/semodule\n[Service]\nType=oneshot\nExecStart=/usr/sbin/semodule -i /opt/periphery/modules/base_container.cil\nExecStart=/usr/sbin/semodule -i /opt/periphery/modules/net_container.cil\nExecStart=/usr/sbin/semodule -i /opt/periphery/modules/periphery.cil\nExecStart=/usr/bin/touch /etc/periphery/semodule\n[Install]\nWantedBy=multi-user.target\n",
         "enabled": true,
         "name": "periphery-semodule.service"
       }
