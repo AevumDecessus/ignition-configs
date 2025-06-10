@@ -38,7 +38,7 @@
         "path": "/opt/semodules/modules/registry.cil",
         "contents": {
           "compression": "gzip",
-          "source": "data:;base64,H4sIAAAAAAAC/8SRTW6DMBBG9znFt4RTIccMyQhjo/E0UW9f8WMRmippJRdvwX7vs151dsH2ELpwVPk8AcDyjf2VhBU2eDXsSerlp3Eu3DFKsBQjLIk2igotCyqYtm28GQhWyCjhQmpUBRysOsyqMJKHkGkhNIQbLedlmACRjNgr4nrrLqyEuq7xUt2xo8k9juTbF+bBjDv7LE6uD+/Y979XdqFZvck0U5f765Tvr36LjcH2zf45ib4NfzMx5Zo5pdI8jzgw0k/yrLmeBVnD3Yw0js/F2z3uKJFv7/+fgo+ODBF9FwtlS+bjQm3GnGkSNUOMqW2ZGMl8XIzNmDNGov41Rn36CgAA//9EiHwxWAgAAA=="
+          "source": "data:;base64,H4sIAAAAAAAC/8SWz5LCIAyH7z5FjvapGISoGYEwIau7b79DLVP/rXpg7bGU/L6Qr51hvQnsDiC4o6LyswIAOK9R2qOQguOklhLK8OClYFEhp+hNQjW3e20IfIIs7LAUcBxjDvhtoqVkMosahTWoy6awO2B9gGQjmg0lD8MwwNOYQOnwR8wbKTjVeRJYg/Xe1CJwglYRdqhWVYDYaYBxRpwxgaD1IBj5iOf9EmtAQStuD2WqOgkpvkZvKWBl54zJPyFHm6/oI7ixvlKdw/vILZuJ20hj6rl+auX21C9j6+DN9XFa+tz4ixbbtzPmLKXmvokPSnoE76rrHtBV3NGKCbRZ3N1lH0vou+b/j8FLRgeJaVsW0tbInxM1E3uqaakdZFS3y8ho5M/JmIk9ZbTUHn8Ge3xwwair8wVjWP0GAAD//3ZvCmBJCQAA"
         },
         "mode": 420
       }

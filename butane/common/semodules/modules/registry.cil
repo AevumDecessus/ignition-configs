@@ -1,5 +1,8 @@
 (block registry
     (blockinherit container)
+    (blockinherit restricted_net_container)
+    (allow process commplex_main_port_t ( tcp_socket (  name_bind ))) 
+    (allow process commplex_link_port_t ( tcp_socket ( name_bind ))) 
     (allow process cert_t ( dir ( add_name create getattr ioctl lock open read remove_name rmdir search setattr write ))) 
     (allow process cert_t ( file ( append create getattr ioctl lock map open read rename setattr unlink write ))) 
     (allow process cert_t ( fifo_file ( getattr read write append ioctl lock open ))) 
@@ -20,4 +23,5 @@
     (allow process var_t ( file ( append create getattr ioctl lock map open read rename setattr unlink write ))) 
     (allow process var_t ( fifo_file ( getattr read write append ioctl lock open ))) 
     (allow process var_t ( sock_file ( append getattr open read write ))) 
+    (allow process node_t ( tcp_socket ( node_bind ))) 
 )
