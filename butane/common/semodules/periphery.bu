@@ -11,7 +11,7 @@ systemd:
         ConditionPathExists=!/opt/semodules/periphery
         [Service]
         Type=oneshot
-        ExecStart=/usr/sbin/semodule -i /opt/semodules/modules/registry.cil
+        ExecStart=/usr/sbin/semodule -i /opt/semodules/modules/periphery.cil
         ExecStart=/usr/bin/touch /opt/semodules/periphery
         [Install]
         WantedBy=multi-user.target

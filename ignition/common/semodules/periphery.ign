@@ -5,7 +5,7 @@
   "systemd": {
     "units": [
       {
-        "contents": "[Unit]\nDescription=Installs periphery semodule\nConditionPathExists=/opt/semodules/base\nConditionPathExists=!/opt/semodules/periphery\n[Service]\nType=oneshot\nExecStart=/usr/sbin/semodule -i /opt/semodules/modules/registry.cil\nExecStart=/usr/bin/touch /opt/semodules/periphery\n[Install]\nWantedBy=multi-user.target\n",
+        "contents": "[Unit]\nDescription=Installs periphery semodule\nConditionPathExists=/opt/semodules/base\nConditionPathExists=!/opt/semodules/periphery\n[Service]\nType=oneshot\nExecStart=/usr/sbin/semodule -i /opt/semodules/modules/periphery.cil\nExecStart=/usr/bin/touch /opt/semodules/periphery\n[Install]\nWantedBy=multi-user.target\n",
         "enabled": true,
         "name": "semodules-periphery.service"
       }
