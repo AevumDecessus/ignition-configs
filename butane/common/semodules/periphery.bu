@@ -1,0 +1,17 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: semodules-periphery.service
+      enabled: true
+      contents: |
+        [Unit]
+        Description=Installs periphery semodule
+        ConditionPathExists=/opt/semodules/base
+        ConditionPathExists=!/opt/semodules/periphery
+        [Service]
+        Type=oneshot
+        ExecStart=/usr/sbin/semodule -i /opt/semodules/modules/registry.cil
+        ExecStart=/usr/bin/touch /opt/semodules/periphery
+        [Install]
+        WantedBy=multi-user.target

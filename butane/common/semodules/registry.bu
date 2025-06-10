@@ -1,0 +1,17 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: semodules-registry.service
+      enabled: true
+      contents: |
+        [Unit]
+        Description=Installs registry semodule
+        ConditionPathExists=/opt/semodules/base
+        ConditionPathExists=!/opt/semodules/registry
+        [Service]
+        Type=oneshot
+        ExecStart=/usr/sbin/semodule -i /opt/semodules/modules/registry.cil
+        ExecStart=/usr/bin/touch /opt/semodules/registry
+        [Install]
+        WantedBy=multi-user.target

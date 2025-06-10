@@ -3,9 +3,15 @@
     "version": "3.4.0"
   },
   "storage": {
+    "directories": [
+      {
+        "path": "/opt/semodules",
+        "mode": 492
+      }
+    ],
     "files": [
       {
-        "path": "/opt/periphery/modules/base_container.cil",
+        "path": "/opt/semodules/modules/base_container.cil",
         "contents": {
           "compression": "gzip",
           "source": "data:;base64,H4sIAAAAAAAC/4yR0W6uIBCE732KvcSnIohzTonIkmX9rW/fgGiT9k/j1UYzM98Oa6bIfiHPSV1IkMHokUFZ2KOUsX8W9gt0HIxwxPnnKIrVyg+lU5UwbYoCpZlXFxKZLqHxnegm20fy8gqitrg0T/z5zLL6Yj2nolI5s237/235FyK67qzeZC5G3q/C/U1Oga0GMl7gFMQZif5DaySVPgVupl2CggTJraAY0kJbaiOw10jtFC5npHn8DayzL3XiLkTj1fw3Jp83y5UBq0983+eQLWlYq+3KMguOu2Rbu5UqcOI/7qKvgP0sWmPH4SsAAP//QEieAGICAAA="
@@ -13,7 +19,7 @@
         "mode": 420
       },
       {
-        "path": "/opt/periphery/modules/net_container.cil",
+        "path": "/opt/semodules/modules/net_container.cil",
         "contents": {
           "compression": "gzip",
           "source": "data:;base64,H4sIAAAAAAAC/7yUUW7DIAyG33MKP5JTIWLcFpXYCNx1u/1klmbtpq7ppC0vDo7/Xx82wU1Z8AhM6lFYQ2KqAyyPk6JJOOTb7/6SXgtXgb4VCqo1TSelRgotcJzk1ZtBlDkkBleqILU2jqt+HMZhWFAqNa0JlaJ/RHWv9AfAkLOcYSFYo1MsvgkeScElQTXvEGFParuBDnauSQnakgqlEEeYEkdAYSZUK5eiVtLD4aRRzgxYKShBTk2JISBS0fFq94/gTvHP4Z7Baaj/wrMFyCu4zEe/S5nAGcYWJUskU1r8mH0lfIF+CIzTVrsqM9hKZUNzbh1tYN3xYvQrh47ySbDV4Pq09Jx1/QmA61/hRv/I4KBafJGq31zCTH4Z+waQuz7WTT+3fW+KvYxfrpD3AAAA///FOiKNzQQAAA=="
@@ -21,10 +27,18 @@
         "mode": 420
       },
       {
-        "path": "/opt/periphery/modules/periphery.cil",
+        "path": "/opt/semodules/modules/periphery.cil",
         "contents": {
           "compression": "gzip",
           "source": "data:;base64,H4sIAAAAAAAC/8SU0Y6CMBBF3/2KeZSvamp7XSfCtJkOuvv3mwJdojEmbog+AsM9dzih+0OfwpkylPMJ+rMjIppvspygbBSSmGeBdg8eKoopB0N0AnP3s77v05WypoBSaBRFgV4QXU5qzmhPFrIrKZxRL0j8AHdgidR1HT3K+CO4i1eno0wpkZX25GN0NYGCwhvoC+bNlDgF62laNGUIKXwkxZAumOd1qAEFXsOJyvLWVdnwYo8j96hFcobEJzUGn2+qTC0aeJSe5fxP/jG5pUTDTog5bOl1/z1eY1Rb7nbRhlpXel5ejuVD2hr5faJW4pZqWuoGMqrbz8ho5PfJWIlbymipG8hYfzkdxXjAFDwKf7tiCj+sh2VIIghmaQ7rdr8BAAD///Q7WLrMBQAA"
+        },
+        "mode": 420
+      },
+      {
+        "path": "/opt/semodules/modules/registry.cil",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/8SRTW6DMBBG9znFt4RTIccMyQhjo/E0UW9f8WMRmippJRdvwX7vs151dsH2ELpwVPk8AcDyjf2VhBU2eDXsSerlp3Eu3DFKsBQjLIk2igotCyqYtm28GQhWyCjhQmpUBRysOsyqMJKHkGkhNIQbLedlmACRjNgr4nrrLqyEuq7xUt2xo8k9juTbF+bBjDv7LE6uD+/Y979XdqFZvck0U5f765Tvr36LjcH2zf45ib4NfzMx5Zo5pdI8jzgw0k/yrLmeBVnD3Yw0js/F2z3uKJFv7/+fgo+ODBF9FwtlS+bjQm3GnGkSNUOMqW2ZGMl8XIzNmDNGov41Rn36CgAA//9EiHwxWAgAAA=="
         },
         "mode": 420
       }
@@ -33,9 +47,9 @@
   "systemd": {
     "units": [
       {
-        "contents": "[Unit]\nDescription=Installs periphery semodule\nConditionPathExists=!/opt/periphery/semodule\n[Service]\nType=oneshot\nExecStart=/usr/sbin/semodule -i /opt/periphery/modules/base_container.cil\nExecStart=/usr/sbin/semodule -i /opt/periphery/modules/net_container.cil\nExecStart=/usr/sbin/semodule -i /opt/periphery/modules/periphery.cil\nExecStart=/usr/bin/touch /opt/periphery/semodule\n[Install]\nWantedBy=multi-user.target\n",
+        "contents": "[Unit]\nDescription=Installs semodules base modules\nConditionPathExists=!/opt/semodules/base\n[Service]\nType=oneshot\nExecStart=/usr/sbin/semodule -i /opt/semodules/modules/base_container.cil\nExecStart=/usr/sbin/semodule -i /opt/semodules/modules/net_container.cil\nExecStart=/usr/bin/touch /opt/semodules/base\n[Install]\nWantedBy=multi-user.target\n",
         "enabled": true,
-        "name": "periphery-semodule.service"
+        "name": "semodules-base.service"
       }
     ]
   }
