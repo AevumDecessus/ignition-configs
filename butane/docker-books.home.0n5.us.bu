@@ -12,6 +12,8 @@ ignition:
       - local: ./ignition/motd/books.ign
       - local: ./ignition/mounts/zfs/booksdata-zpool.ign
       - local: ./ignition/common/docker_user_books.ign
+      - local: ./ignition/common/semodules/base.ign
+      - local: ./ignition/common/semodules/periphery.ign
 storage:
   files:
     - path: /etc/hostname

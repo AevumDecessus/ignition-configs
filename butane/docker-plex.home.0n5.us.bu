@@ -24,6 +24,8 @@ ignition:
       - local: ./ignition/mounts/docker/plex.ign
       - local: ./ignition/mounts/docker/books.ign
       - local: ./ignition/motd/plex.ign
+      - local: ./ignition/common/semodules/base.ign
+      - local: ./ignition/common/semodules/periphery.ign
 storage:
   files:
     - path: /etc/hostname

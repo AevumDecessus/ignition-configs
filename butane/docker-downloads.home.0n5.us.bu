@@ -22,6 +22,8 @@ ignition:
       - local: ./ignition/mounts/zfs/downloadsdata-zpool.ign
       - local: ./ignition/common/docker_user_downloads.ign
       - local: ./ignition/motd/downloads.ign
+      - local: ./ignition/common/semodules/base.ign
+      - local: ./ignition/common/semodules/periphery.ign
 storage:
   files:
     - path: /etc/hostname
