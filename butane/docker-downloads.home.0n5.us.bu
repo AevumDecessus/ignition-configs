@@ -8,6 +8,7 @@ ignition:
       - local: ./ignition/mounts/anime_movies.ign
       - local: ./ignition/mounts/audiobooks.ign
       - local: ./ignition/mounts/cartoons.ign
+      - local: ./ignition/mounts/comics.ign
       - local: ./ignition/mounts/documentary_films.ign
       - local: ./ignition/mounts/documentary_series.ign
       - local: ./ignition/mounts/kids_tv.ign
