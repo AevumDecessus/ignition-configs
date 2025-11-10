@@ -1,0 +1,23 @@
+variant: fcos
+version: 1.5.0
+ignition:
+  config:
+    merge:
+      - local: ./ignition/ucore/merge-ucore.ign
+      - local: ./ignition/mounts/docker/library.ign
+      - local: ./ignition/motd/library.ign
+      - local: ./ignition/common/semodules/base.ign
+      - local: ./ignition/common/semodules/registry.ign
+      - local: ./ignition/common/semodules/periphery.ign
+storage:
+  files:
+    - path: /etc/hostname
+      mode: 0644
+      contents:
+        inline: docker-library.home.0n5.us
+    - path: /etc/NetworkManager/system-connections/ens18.nmconnection
+      overwrite: false
+      append:
+        - inline: |
+            address1=192.168.202.56/23,192.168.202.1
+            dhcp-hostname=docker-library.home.0n5.us
