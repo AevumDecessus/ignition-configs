@@ -1,0 +1,14 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "systemd": {
+    "units": [
+      {
+        "contents": "[Unit]\nRequires=network-online.target\n[Mount]\nWhat=truenas.home.0n5.us:/mnt/tank1/immich\nWhere=/var/opt/immich\nType=nfs\n[Install]\nRequiredBy=docker.service\nWantedBy=multi-user.target\n",
+        "enabled": true,
+        "name": "var-opt-immich.mount"
+      }
+    ]
+  }
+}
