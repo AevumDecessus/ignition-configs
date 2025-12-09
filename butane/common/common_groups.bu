@@ -24,3 +24,7 @@ passwd:
       gid: 7654
     - name: docker_user
       gid: 7890
+storage:
+  links:
+    - path: /etc/localtime
+      target: ../usr/share/zoneinfo/America/New_York
