@@ -6,6 +6,7 @@ ignition:
       - local: ./ignition/ucore/merge-ucore-physical-zfs.ign
       - local: ./ignition/mounts/audiobooks.ign
       - local: ./ignition/mounts/audiobooks_unsorted.ign
+      - local: ./ignition/mounts/booklore.ign
       - local: ./ignition/mounts/calibre.ign
       - local: ./ignition/mounts/downloads.ign
       - local: ./ignition/mounts/docker/books.ign
