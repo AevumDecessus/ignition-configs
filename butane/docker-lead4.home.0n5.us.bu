@@ -5,7 +5,9 @@ ignition:
     merge:
       - local: ./ignition/ucore/merge-ucore.ign
       - local: ./ignition/motd/lead4.ign
-      - local: ./ignition/mounts/docker/no_mount_home.ign
+      - local: ./ignition/mounts/docker/simple.ign
+      - local: ./ignition/common/semodules/base.ign
+      - local: ./ignition/common/semodules/periphery.ign
 storage:
   files:
     - path: /etc/hostname
