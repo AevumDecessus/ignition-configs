@@ -1,0 +1,16 @@
+variant: fcos
+version: 1.5.0
+systemd:
+  units:
+    - name: var-opt-misc.mount
+      enabled: true
+      contents: | 
+        [Unit]
+        Requires=network-online.target
+        [Mount]
+        What=truenas.home.0n5.us:/mnt/tank0/misc
+        Where=/var/opt/misc
+        Type=nfs
+        [Install]
+        RequiredBy=docker.service
+        WantedBy=multi-user.target

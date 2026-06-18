@@ -5,6 +5,7 @@ ignition:
     merge:
       - local: ./ignition/ucore/merge-ucore.ign
       - local: ./ignition/mounts/docker/misc.ign
+      - local: ./ignition/mounts/misc.ign
       - local: ./ignition/motd/misc.ign
       - local: ./ignition/common/semodules/base.ign
       - local: ./ignition/common/semodules/periphery.ign
