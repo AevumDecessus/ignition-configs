@@ -43,11 +43,12 @@
       {
         "overwrite": false,
         "path": "/etc/NetworkManager/system-connections/ens18.nmconnection",
-        "contents": {
-          "compression": "gzip",
-          "source": "data:;base64,H4sIAAAAAAAC/1TOwQ7CIBAE0Pt+i2Ch1tQDX9L0sIFtIJalYalJ/95oPNTry2RmJl+YybdUeIYUHLGYEdqxkaMWqTI1SNyoLuhJMWb6Raa0vW4zBBZnHlab+6htZ3VvPqSEsProYsmkOx70LpDxUAum1S24CkGmFktwGXnHFTCESiLmr2sYr7a/nMVAiH5TsUj7XgnFP6mqvEvy+jz2DgAA///ocTyF1wAAAA=="
-        },
-        "mode": 384
+        "append": [
+          {
+            "compression": "",
+            "source": "data:,address1%3D192.168.202.58%2F23%2C192.168.202.1%0Adhcp-hostname%3Ddocker-music.home.0n5.us%0A"
+          }
+        ]
       }
     ]
   }
